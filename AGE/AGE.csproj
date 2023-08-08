@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GestioEnfantDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestioEnfantDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vue\Formulaire\FrmGestionEffectif.cs">
@@ -63,6 +68,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vue\Formulaire\FrmGestionEffectif.resx">
+      <DependentUpon>FrmGestionEffectif.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GestioEnfantDataSet.xsc">
+      <DependentUpon>GestioEnfantDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GestioEnfantDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GestioEnfantDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GestioEnfantDataSet.xss">
+      <DependentUpon>GestioEnfantDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
