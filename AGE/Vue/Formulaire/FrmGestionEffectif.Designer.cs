@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionEffectif));
-            this.ListBoxEnfant = new System.Windows.Forms.ListBox();
             this.ComboBoxGroupe = new System.Windows.Forms.ComboBox();
             this.ComboBoxBus = new System.Windows.Forms.ComboBox();
             this.ButtonExport = new System.Windows.Forms.Button();
@@ -38,15 +37,8 @@
             this.LabelGroupeSelect = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LabelTitreFOrm = new System.Windows.Forms.Label();
+            this.ListBoxEnfant = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
-            // 
-            // ListBoxEnfant
-            // 
-            this.ListBoxEnfant.FormattingEnabled = true;
-            this.ListBoxEnfant.Location = new System.Drawing.Point(12, 70);
-            this.ListBoxEnfant.Name = "ListBoxEnfant";
-            this.ListBoxEnfant.Size = new System.Drawing.Size(343, 368);
-            this.ListBoxEnfant.TabIndex = 0;
             // 
             // ComboBoxGroupe
             // 
@@ -118,11 +110,20 @@
             this.LabelTitreFOrm.TabIndex = 8;
             this.LabelTitreFOrm.Text = "Affichage et exportation des differents Groupes";
             // 
+            // ListBoxEnfant
+            // 
+            this.ListBoxEnfant.FormattingEnabled = true;
+            this.ListBoxEnfant.Location = new System.Drawing.Point(24, 57);
+            this.ListBoxEnfant.Name = "ListBoxEnfant";
+            this.ListBoxEnfant.Size = new System.Drawing.Size(355, 381);
+            this.ListBoxEnfant.TabIndex = 9;
+            // 
             // FrmGestionEffectif
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ListBoxEnfant);
             this.Controls.Add(this.LabelTitreFOrm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LabelGroupeSelect);
@@ -131,7 +132,6 @@
             this.Controls.Add(this.ButtonExport);
             this.Controls.Add(this.ComboBoxBus);
             this.Controls.Add(this.ComboBoxGroupe);
-            this.Controls.Add(this.ListBoxEnfant);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmGestionEffectif";
@@ -143,8 +143,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox ListBoxEnfant;
         private System.Windows.Forms.ComboBox ComboBoxGroupe;
         private System.Windows.Forms.ComboBox ComboBoxBus;
         private System.Windows.Forms.Button ButtonExport;
@@ -153,5 +151,6 @@
         private System.Windows.Forms.Label LabelGroupeSelect;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LabelTitreFOrm;
+        private System.Windows.Forms.ListBox ListBoxEnfant;
     }
 }

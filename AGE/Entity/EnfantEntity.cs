@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,7 +28,13 @@ namespace AGE.Entity
                 SqlDataReader MyDataReader = MyCommand.ExecuteReader();
                 while (MyDataReader.Read())
                 {
-                    ListeBoxEnfant.Items.Add(MyDataReader["Nom"]);
+                    string nom = MyDataReader["Nom"].ToString();
+                    string prenom = MyDataReader["Prenom"].ToString();
+                    string DataNaissance = MyDataReader["DateNaissance"].ToString();
+                    string IdBus = MyDataReader["IdBus"].ToString();
+                    string IGroupe = MyDataReader["IGroupe"].ToString();
+                    string ligneEnfant = $"{nom} {prenom}  {DataNaissance} {IGroupe} {IdBus}";
+                    ListeBoxEnfant.Items.Add(ligneEnfant);
                 }
 
             }
