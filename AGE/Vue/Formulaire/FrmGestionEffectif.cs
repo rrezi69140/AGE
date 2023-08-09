@@ -18,7 +18,7 @@ namespace AGE.Vue.Formulaire
             InitializeComponent();
             EnfantEntity Enfant = new EnfantEntity();
 
-            Enfant.GetListEnfant(ListBoxEnfant);
+            Enfant.GetListEnfant(DataGridViewEnfant);
         }
         
 
