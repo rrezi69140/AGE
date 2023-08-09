@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AGE.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace AGE.Vue.Formulaire
         public FrmGestionEffectif()
         {
             InitializeComponent();
+            EnfantEntity Enfant = new EnfantEntity();
+
+            Enfant.GetListEnfant(ListBoxEnfant);
         }
+        
+
+       
+       
     }
+    
 }
