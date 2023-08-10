@@ -15,9 +15,9 @@ namespace AGE.Entity
         public SqlConnection MyConnecion = new SqlConnection("Data Source=DESKTOP-1K0GE9A\\SQLEXPRESS;Initial Catalog=GestioEnfant;Integrated Security=True");
         public string RequetteSQl;
 
-        public void GetListEnfant(ListBox ListeBoxEnfant)
+        public void GetListEnfant(DataGridView DataGridBoxEnfant)
         {
-            RequetteSQl = "Select * From Membre";
+            RequetteSQl = "Select NumDossier,Nom,Prenom,DateNaissance,G.LibeleGroup ,B.LibeleBus From Membre M join Groupe G ON M.IGroupe = G.IdGroupe join Bus B ON M.IGroupe = B.IdBus";
             SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
             
 
@@ -28,13 +28,7 @@ namespace AGE.Entity
                 SqlDataReader MyDataReader = MyCommand.ExecuteReader();
                 while (MyDataReader.Read())
                 {
-                    string nom = MyDataReader["Nom"].ToString();
-                    string prenom = MyDataReader["Prenom"].ToString();
-                    string DataNaissance = MyDataReader["DateNaissance"].ToString();
-                    string IdBus = MyDataReader["IdBus"].ToString();
-                    string IGroupe = MyDataReader["IGroupe"].ToString();
-                    string ligneEnfant = $"{nom} {prenom}  {DataNaissance} {IGroupe} {IdBus}";
-                    ListeBoxEnfant.Items.Add(ligneEnfant);
+                    DataGridBoxEnfant.Rows.Add(MyDataReader.GetValue(0).ToString(), MyDataReader.GetValue(1).ToString(), MyDataReader.GetValue(2).ToString(), MyDataReader.GetValue(3).ToString(), MyDataReader.GetValue(4).ToString(), MyDataReader.GetValue(5).ToString());
                 }
 
             }

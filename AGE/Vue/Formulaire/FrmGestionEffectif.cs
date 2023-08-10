@@ -17,13 +17,31 @@ namespace AGE.Vue.Formulaire
         {
             InitializeComponent();
             EnfantEntity Enfant = new EnfantEntity();
+            BusEntity Bus = new BusEntity();
+            GroupeEntity Groupe = new GroupeEntity();
 
-            Enfant.GetListEnfant(ListBoxEnfant);
+            Enfant.GetListEnfant(DataGridViewEnfant);
+            Bus.GetListBus(ComboBoxBus);
+            Groupe.GetListGroupe(ComboBoxGroupe);
+            
+
         }
         
 
-       
-       
+        private void ButtonGroupeOk_Click(object sender, EventArgs e)
+        {
+            GroupeEntity Groupe = new GroupeEntity();
+            Groupe.GetListEnfantGroupe(ComboBoxGroupe, DataGridViewEnfant);
+            
+
+        }
+
+        private void ButtonBusOk_Click(object sender, EventArgs e)
+        {
+            BusEntity Bus= new BusEntity();
+            Bus.GetListEnfantBus(ComboBoxBus, DataGridViewEnfant);
+
+        }
     }
     
 }
