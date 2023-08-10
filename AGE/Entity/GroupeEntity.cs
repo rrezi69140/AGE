@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace AGE.Entity
 {
-    internal class BusEntity
+    internal class GroupeEntity
     {
         public SqlConnection MyConnecion = new SqlConnection("Data Source=DESKTOP-1K0GE9A\\SQLEXPRESS;Initial Catalog=GestioEnfant;Integrated Security=True");
         public string RequetteSQl;
 
-        public void GetListBus(ComboBox ComboBoxBus)
+        public void GetListGroupe(ComboBox ComboBoxGroupe)
         {
-            RequetteSQl = "Select LibeleBus  From Bus";
+            RequetteSQl = "Select LibeleGroup  From Groupe";
             SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
             
 
@@ -28,7 +28,7 @@ namespace AGE.Entity
                 SqlDataReader MyDataReader = MyCommand.ExecuteReader();
                 while (MyDataReader.Read())
                 {
-                    ComboBoxBus.Items.Add(MyDataReader.GetString(0));
+                    ComboBoxGroupe.Items.Add(MyDataReader.GetString(0));
                 }
 
             }

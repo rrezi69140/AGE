@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Entity\BusEntity.cs" />
     <Compile Include="Entity\EnfantEntity.cs" />
+    <Compile Include="Entity\GroupeEntity.cs" />
     <Compile Include="GestioEnfantDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -107,9 +108,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entity\Classe\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Vue\Icone\users-solid_1_%281%29.ico" />
   </ItemGroup>
