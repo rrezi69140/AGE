@@ -52,7 +52,7 @@ namespace AGE.Entity
             GroupeSelectionner = ComboBoxGroupe.SelectedItem.ToString();
             
             
-            RequetteSQl = $"Select *  From Membre M join Groupe G ON M.IGroupe = G.IdGroupe where G.LibeleGroup = '{GroupeSelectionner}'";
+            RequetteSQl = $"Select NumDossier,Nom,Prenom,DateNaissance,G.LibeleGroup ,B.LibeleBus From Membre M join Groupe G ON M.IGroupe = G.IdGroupe join Bus B ON M.IGroupe = B.IdBus where G.LibeleGroup = '{GroupeSelectionner}'";
             SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
             try
             {
