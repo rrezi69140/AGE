@@ -17,7 +17,8 @@ namespace AGE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmGestionEffectif());
+            Application.Run(new FrmAceuilleLancementAplication());
+            
         }
     }
 }
