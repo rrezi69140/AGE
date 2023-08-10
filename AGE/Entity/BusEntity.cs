@@ -53,7 +53,7 @@ namespace AGE.Entity
             BusSelectionner = ComboBoxBus.SelectedItem.ToString();
 
 
-            RequetteSQl = $"Select *  From Membre M join Bus B ON M.IGroupe = B.IdBus where B.LibeleBus = '{BusSelectionner}'";
+            RequetteSQl = $"Select NumDossier,Nom,Prenom,DateNaissance,G.LibeleGroup ,B.LibeleBus From Membre M join Groupe G ON M.IGroupe = G.IdGroupe join Bus B ON M.IGroupe = B.IdBus where B.LibeleBus = '{BusSelectionner}'";
             SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
             try
             {
