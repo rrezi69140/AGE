@@ -52,7 +52,7 @@
             // ComboBoxGroupe
             // 
             this.ComboBoxGroupe.FormattingEnabled = true;
-            this.ComboBoxGroupe.Location = new System.Drawing.Point(849, 125);
+            this.ComboBoxGroupe.Location = new System.Drawing.Point(746, 122);
             this.ComboBoxGroupe.Name = "ComboBoxGroupe";
             this.ComboBoxGroupe.Size = new System.Drawing.Size(121, 21);
             this.ComboBoxGroupe.TabIndex = 1;
@@ -60,14 +60,14 @@
             // ComboBoxBus
             // 
             this.ComboBoxBus.FormattingEnabled = true;
-            this.ComboBoxBus.Location = new System.Drawing.Point(849, 206);
+            this.ComboBoxBus.Location = new System.Drawing.Point(746, 203);
             this.ComboBoxBus.Name = "ComboBoxBus";
             this.ComboBoxBus.Size = new System.Drawing.Size(121, 21);
             this.ComboBoxBus.TabIndex = 2;
             // 
             // ButtonExport
             // 
-            this.ButtonExport.Location = new System.Drawing.Point(951, 275);
+            this.ButtonExport.Location = new System.Drawing.Point(848, 272);
             this.ButtonExport.Name = "ButtonExport";
             this.ButtonExport.Size = new System.Drawing.Size(75, 23);
             this.ButtonExport.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             // ButtonGroupeOk
             // 
-            this.ButtonGroupeOk.Location = new System.Drawing.Point(992, 125);
+            this.ButtonGroupeOk.Location = new System.Drawing.Point(889, 122);
             this.ButtonGroupeOk.Name = "ButtonGroupeOk";
             this.ButtonGroupeOk.Size = new System.Drawing.Size(34, 23);
             this.ButtonGroupeOk.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             // ButtonBusOk
             // 
-            this.ButtonBusOk.Location = new System.Drawing.Point(992, 204);
+            this.ButtonBusOk.Location = new System.Drawing.Point(889, 201);
             this.ButtonBusOk.Name = "ButtonBusOk";
             this.ButtonBusOk.Size = new System.Drawing.Size(34, 23);
             this.ButtonBusOk.TabIndex = 5;
@@ -95,7 +95,7 @@
             // LabelGroupeSelect
             // 
             this.LabelGroupeSelect.AutoSize = true;
-            this.LabelGroupeSelect.Location = new System.Drawing.Point(846, 93);
+            this.LabelGroupeSelect.Location = new System.Drawing.Point(743, 90);
             this.LabelGroupeSelect.Name = "LabelGroupeSelect";
             this.LabelGroupeSelect.Size = new System.Drawing.Size(156, 13);
             this.LabelGroupeSelect.TabIndex = 6;
@@ -104,7 +104,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(846, 177);
+            this.label1.Location = new System.Drawing.Point(743, 174);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 13);
             this.label1.TabIndex = 7;
@@ -123,7 +123,7 @@
             // 
             this.DataGridViewEnfant.AllowUserToAddRows = false;
             this.DataGridViewEnfant.AllowUserToDeleteRows = false;
-            this.DataGridViewEnfant.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.DataGridViewEnfant.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewEnfant.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Transparent;

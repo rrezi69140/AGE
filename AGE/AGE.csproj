@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\BusEntity.cs" />
     <Compile Include="Entity\EnfantEntity.cs" />
     <Compile Include="GestioEnfantDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

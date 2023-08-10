@@ -17,8 +17,11 @@ namespace AGE.Vue.Formulaire
         {
             InitializeComponent();
             EnfantEntity Enfant = new EnfantEntity();
+            BusEntity Bus = new BusEntity();
 
             Enfant.GetListEnfant(DataGridViewEnfant);
+            Bus.GetListBus(ComboBoxBus);
+
         }
         
 
