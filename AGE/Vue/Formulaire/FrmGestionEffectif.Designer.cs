@@ -44,7 +44,7 @@
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DateNaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumBus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NomBus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumGroupe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEnfant)).BeginInit();
             this.SuspendLayout();
@@ -115,9 +115,10 @@
             // LabelTitreFOrm
             // 
             this.LabelTitreFOrm.AutoSize = true;
-            this.LabelTitreFOrm.Location = new System.Drawing.Point(300, 24);
+            this.LabelTitreFOrm.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitreFOrm.Location = new System.Drawing.Point(318, 20);
             this.LabelTitreFOrm.Name = "LabelTitreFOrm";
-            this.LabelTitreFOrm.Size = new System.Drawing.Size(228, 13);
+            this.LabelTitreFOrm.Size = new System.Drawing.Size(467, 31);
             this.LabelTitreFOrm.TabIndex = 8;
             this.LabelTitreFOrm.Text = "Affichage et exportation des differents Groupes";
             // 
@@ -141,10 +142,10 @@
             this.Nom,
             this.Prenom,
             this.DateNaissance,
-            this.NumBus,
+            this.NomBus,
             this.NumGroupe});
             this.DataGridViewEnfant.GridColor = System.Drawing.SystemColors.Control;
-            this.DataGridViewEnfant.Location = new System.Drawing.Point(33, 82);
+            this.DataGridViewEnfant.Location = new System.Drawing.Point(33, 73);
             this.DataGridViewEnfant.Name = "DataGridViewEnfant";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent;
@@ -154,12 +155,12 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridViewEnfant.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridViewEnfant.Size = new System.Drawing.Size(656, 468);
+            this.DataGridViewEnfant.Size = new System.Drawing.Size(656, 527);
             this.DataGridViewEnfant.TabIndex = 9;
             // 
             // NumDossier
             // 
-            this.NumDossier.HeaderText = "NumeroDossier";
+            this.NumDossier.HeaderText = "Numero de Dossier";
             this.NumDossier.Name = "NumDossier";
             // 
             // Nom
@@ -174,17 +175,17 @@
             // 
             // DateNaissance
             // 
-            this.DateNaissance.HeaderText = "DateNaissance";
+            this.DateNaissance.HeaderText = "Date de Naissance";
             this.DateNaissance.Name = "DateNaissance";
             // 
-            // NumBus
+            // NomBus
             // 
-            this.NumBus.HeaderText = "NumBus";
-            this.NumBus.Name = "NumBus";
+            this.NomBus.HeaderText = "Nom du  Bus";
+            this.NomBus.Name = "NomBus";
             // 
             // NumGroupe
             // 
-            this.NumGroupe.HeaderText = "NumGroupe";
+            this.NumGroupe.HeaderText = "Nom du Groupe";
             this.NumGroupe.Name = "NumGroupe";
             // 
             // FrmGestionEffectif
@@ -226,7 +227,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prenom;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateNaissance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumBus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NomBus;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumGroupe;
     }
 }

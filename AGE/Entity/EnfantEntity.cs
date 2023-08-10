@@ -17,7 +17,7 @@ namespace AGE.Entity
 
         public void GetListEnfant(DataGridView DataGridBoxEnfant)
         {
-            RequetteSQl = "Select * From Membre";
+            RequetteSQl = "Select NumDossier,Nom,Prenom,DateNaissance,G.LibeleGroup ,B.LibeleBus From Membre M join Groupe G ON M.IGroupe = G.IdGroupe join Bus B ON M.IGroupe = B.IdBus";
             SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
             
 
