@@ -43,5 +43,44 @@ namespace AGE.Entity
                 }
             }
         }
+         public void GetListEnfantGroupe(ComboBox ComboBoxGroupe,DataGridView dataGridView) 
+        {
+
+            
+           
+            string GroupeSelectionner;
+            GroupeSelectionner = ComboBoxGroupe.SelectedItem.ToString();
+            
+            
+            RequetteSQl = $"Select *  From Membre M join Groupe G ON M.IGroupe = G.IdGroupe where G.LibeleGroup = '{GroupeSelectionner}'";
+            SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
+            try
+            {
+                MyConnecion.Open();
+                MyCommand.ExecuteNonQuery();
+                SqlDataReader MyDataReader = MyCommand.ExecuteReader();
+                dataGridView.Rows.Clear();
+                while (MyDataReader.Read())
+                {
+                    
+                    dataGridView.Rows.Add(MyDataReader.GetValue(0).ToString(), MyDataReader.GetValue(1).ToString(), MyDataReader.GetValue(2).ToString(), MyDataReader.GetValue(3).ToString(), MyDataReader.GetValue(4).ToString(), MyDataReader.GetValue(5).ToString());
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "MyProgram", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            finally
+            {
+                if (MyConnecion.State == ConnectionState.Open)
+                {
+                    MyConnecion.Close();
+                }
+            }
+
+
+        }
+       
     }
 }

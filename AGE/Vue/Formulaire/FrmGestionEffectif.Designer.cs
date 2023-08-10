@@ -82,6 +82,7 @@
             this.ButtonGroupeOk.TabIndex = 4;
             this.ButtonGroupeOk.Text = "OK";
             this.ButtonGroupeOk.UseVisualStyleBackColor = true;
+            this.ButtonGroupeOk.Click += new System.EventHandler(this.ButtonGroupeOk_Click);
             // 
             // ButtonBusOk
             // 
@@ -91,6 +92,7 @@
             this.ButtonBusOk.TabIndex = 5;
             this.ButtonBusOk.Text = "OK";
             this.ButtonBusOk.UseVisualStyleBackColor = true;
+            this.ButtonBusOk.Click += new System.EventHandler(this.ButtonBusOk_Click);
             // 
             // LabelGroupeSelect
             // 
