@@ -73,6 +73,26 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Copie_de_AGE {
+            get {
+                object obj = ResourceManager.GetObject("Copie de AGE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Copie_de_AGE_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Copie de AGE(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap liste_de_controle {
             get {
                 object obj = ResourceManager.GetObject("liste-de-controle", resourceCulture);

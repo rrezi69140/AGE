@@ -47,6 +47,7 @@
             // 
             // gestionToolStripMenuItem
             // 
+            this.gestionToolStripMenuItem.BackgroundImage = global::AGE.Properties.Resources.Copie_de_AGE_1_;
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionDesListesToolStripMenuItem});
             this.gestionToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -57,6 +58,7 @@
             // 
             // gestionDesListesToolStripMenuItem
             // 
+            this.gestionDesListesToolStripMenuItem.BackgroundImage = global::AGE.Properties.Resources.Copie_de_AGE_1_;
             this.gestionDesListesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gestionDesListesToolStripMenuItem.Image = global::AGE.Properties.Resources.liste_de_controle;
             this.gestionDesListesToolStripMenuItem.Name = "gestionDesListesToolStripMenuItem";
@@ -69,6 +71,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
+            this.BackgroundImage = global::AGE.Properties.Resources.Copie_de_AGE;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);

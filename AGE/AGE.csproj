@@ -121,6 +121,8 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Vue\Icone\AGE.png" />
+    <Content Include="Vue\Icone\Copie de AGE%281%29.png" />
+    <Content Include="Vue\Icone\Copie de AGE.png" />
     <Content Include="Vue\Icone\liste-de-controle.png" />
     <Content Include="Vue\Icone\users-solid_1_%281%29.ico" />
   </ItemGroup>
