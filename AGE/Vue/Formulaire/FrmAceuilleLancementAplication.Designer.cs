@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAceuilleLancementAplication));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesListesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +38,7 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.menuStrip1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuStrip1.BackgroundImage")));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -47,10 +49,11 @@
             // 
             // gestionToolStripMenuItem
             // 
-            this.gestionToolStripMenuItem.BackgroundImage = global::AGE.Properties.Resources.Copie_de_AGE_1_;
+            this.gestionToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gestionToolStripMenuItem.BackgroundImage")));
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionDesListesToolStripMenuItem});
             this.gestionToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gestionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
             this.gestionToolStripMenuItem.Image = global::AGE.Properties.Resources.users_solid_1__1_;
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
             this.gestionToolStripMenuItem.Size = new System.Drawing.Size(117, 35);
@@ -58,9 +61,10 @@
             // 
             // gestionDesListesToolStripMenuItem
             // 
-            this.gestionDesListesToolStripMenuItem.BackgroundImage = global::AGE.Properties.Resources.Copie_de_AGE_1_;
+            this.gestionDesListesToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gestionDesListesToolStripMenuItem.BackgroundImage")));
             this.gestionDesListesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gestionDesListesToolStripMenuItem.Image = global::AGE.Properties.Resources.liste_de_controle;
+            this.gestionDesListesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
+            this.gestionDesListesToolStripMenuItem.Image = global::AGE.Properties.Resources.liste_de_controle1;
             this.gestionDesListesToolStripMenuItem.Name = "gestionDesListesToolStripMenuItem";
             this.gestionDesListesToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
             this.gestionDesListesToolStripMenuItem.Text = "Gestion Des listes";
@@ -71,7 +75,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.BackgroundImage = global::AGE.Properties.Resources.Copie_de_AGE;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);

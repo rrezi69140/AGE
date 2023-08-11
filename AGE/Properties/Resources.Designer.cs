@@ -73,9 +73,9 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Copie_de_AGE {
+        internal static System.Drawing.Bitmap Color1 {
             get {
-                object obj = ResourceManager.GetObject("Copie de AGE", resourceCulture);
+                object obj = ResourceManager.GetObject("Color1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Copie_de_AGE_1_ {
+        internal static System.Drawing.Bitmap Color11 {
             get {
-                object obj = ResourceManager.GetObject("Copie de AGE(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("Color11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +96,16 @@ namespace AGE.Properties {
         internal static System.Drawing.Bitmap liste_de_controle {
             get {
                 object obj = ResourceManager.GetObject("liste-de-controle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap liste_de_controle1 {
+            get {
+                object obj = ResourceManager.GetObject("liste-de-controle1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
