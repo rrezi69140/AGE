@@ -44,13 +44,14 @@ namespace AGE.Entity
             }
         }
 
-        public void GetListEnfantBus(ComboBox ComboBoxBus, DataGridView dataGridView)
+        public void GetListEnfantBus(ComboBox ComboBoxBus, DataGridView dataGridView, ref List<string> RefListEnfant)
         {
 
 
 
             string BusSelectionner;
             BusSelectionner = ComboBoxBus.SelectedItem.ToString();
+            RefListEnfant.Clear();
 
 
             RequetteSQl = $"Select NumDossier,Nom,Prenom,DateNaissance,G.LibeleGroup ,B.LibeleBus From Membre M join Groupe G ON M.IGroupe = G.IdGroupe join Bus B ON M.IGroupe = B.IdBus where B.LibeleBus = '{BusSelectionner}'";
@@ -61,10 +62,19 @@ namespace AGE.Entity
                 MyCommand.ExecuteNonQuery();
                 SqlDataReader MyDataReader = MyCommand.ExecuteReader();
                 dataGridView.Rows.Clear();
+
                 while (MyDataReader.Read())
                 {
 
                     dataGridView.Rows.Add(MyDataReader.GetValue(0).ToString(), MyDataReader.GetValue(1).ToString(), MyDataReader.GetValue(2).ToString(), MyDataReader.GetValue(3).ToString(), MyDataReader.GetValue(4).ToString(), MyDataReader.GetValue(5).ToString());
+                    string NumDossier = ($"{MyDataReader.GetValue(0)};");
+                    string Nom = ($"{MyDataReader.GetValue(1)};");
+                    string Prenom = ($"{MyDataReader.GetValue(2)};");
+                    string DateNaissance = ($"{MyDataReader.GetValue(3)};");
+                    string Groupe = ($"{MyDataReader.GetValue(4)};");
+                    string Bus = ($"{MyDataReader.GetValue(5)}");
+                    string Ligne = (NumDossier + Nom + Prenom + DateNaissance + Groupe + Bus);
+                    RefListEnfant.Add(Ligne);
                 }
 
             }
