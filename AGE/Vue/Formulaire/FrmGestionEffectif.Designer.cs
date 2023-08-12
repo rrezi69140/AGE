@@ -34,7 +34,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionEffectif));
             this.ComboBoxGroupe = new System.Windows.Forms.ComboBox();
             this.ComboBoxBus = new System.Windows.Forms.ComboBox();
-            this.ButtonExport = new System.Windows.Forms.Button();
+            this.ButtonExportGroupe = new System.Windows.Forms.Button();
             this.ButtonGroupeOk = new System.Windows.Forms.Button();
             this.ButtonBusOk = new System.Windows.Forms.Button();
             this.LabelGroupeSelect = new System.Windows.Forms.Label();
@@ -66,14 +66,15 @@
             this.ComboBoxBus.Size = new System.Drawing.Size(121, 21);
             this.ComboBoxBus.TabIndex = 2;
             // 
-            // ButtonExport
+            // ButtonExportGroupe
             // 
-            this.ButtonExport.Location = new System.Drawing.Point(848, 272);
-            this.ButtonExport.Name = "ButtonExport";
-            this.ButtonExport.Size = new System.Drawing.Size(75, 23);
-            this.ButtonExport.TabIndex = 3;
-            this.ButtonExport.Text = "Exporter";
-            this.ButtonExport.UseVisualStyleBackColor = true;
+            this.ButtonExportGroupe.Location = new System.Drawing.Point(938, 122);
+            this.ButtonExportGroupe.Name = "ButtonExportGroupe";
+            this.ButtonExportGroupe.Size = new System.Drawing.Size(75, 23);
+            this.ButtonExportGroupe.TabIndex = 3;
+            this.ButtonExportGroupe.Text = "Exporter";
+            this.ButtonExportGroupe.UseVisualStyleBackColor = true;
+            this.ButtonExportGroupe.Click += new System.EventHandler(this.ButtonExport_Click);
             // 
             // ButtonGroupeOk
             // 
@@ -210,7 +211,7 @@
             this.Controls.Add(this.LabelGroupeSelect);
             this.Controls.Add(this.ButtonBusOk);
             this.Controls.Add(this.ButtonGroupeOk);
-            this.Controls.Add(this.ButtonExport);
+            this.Controls.Add(this.ButtonExportGroupe);
             this.Controls.Add(this.ComboBoxBus);
             this.Controls.Add(this.ComboBoxGroupe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -227,7 +228,7 @@
         #endregion
         private System.Windows.Forms.ComboBox ComboBoxGroupe;
         private System.Windows.Forms.ComboBox ComboBoxBus;
-        private System.Windows.Forms.Button ButtonExport;
+        private System.Windows.Forms.Button ButtonExportGroupe;
         private System.Windows.Forms.Button ButtonGroupeOk;
         private System.Windows.Forms.Button ButtonBusOk;
         private System.Windows.Forms.Label LabelGroupeSelect;
