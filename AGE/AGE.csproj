@@ -121,11 +121,17 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Properties\liste-de-controle.png" />
+    <None Include="Resources\file-excel-regular.png" />
+    <None Include="Resources\people-group-solid.png" />
+    <None Include="Resources\square-check-solid.png" />
     <Content Include="Vue\Image\AGE.png" />
     <Content Include="Vue\Image\Color1.png" />
     <Content Include="Vue\Image\Color2.png" />
     <Content Include="Vue\Image\Color3.png" />
+    <Content Include="Vue\Image\file-excel-regular.png" />
     <Content Include="Vue\Image\liste-de-controle.png" />
+    <Content Include="Vue\Image\people-group-solid.png" />
+    <Content Include="Vue\Image\square-check-solid.png" />
     <Content Include="Vue\Image\users-solid_1_%281%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

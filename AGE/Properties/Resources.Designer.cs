@@ -113,6 +113,16 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SquareCheckSolid {
+            get {
+                object obj = ResourceManager.GetObject("SquareCheckSolid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap users_solid_1__1_ {
             get {
                 object obj = ResourceManager.GetObject("users-solid_1_(1)", resourceCulture);

@@ -25,6 +25,8 @@ namespace AGE.Vue.Formulaire
             EnfantEntity Enfant = new EnfantEntity();
             BusEntity Bus = new BusEntity();
             GroupeEntity Groupe = new GroupeEntity();
+
+           
             
 
             Enfant.GetListEnfant(DataGridViewEnfant);
