@@ -93,6 +93,26 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exportUntitled {
+            get {
+                object obj = ResourceManager.GetObject("exportUntitled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_excel_regular {
+            get {
+                object obj = ResourceManager.GetObject("file_excel_regular", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap liste_de_controle {
             get {
                 object obj = ResourceManager.GetObject("liste-de-controle", resourceCulture);
@@ -106,6 +126,26 @@ namespace AGE.Properties {
         internal static System.Drawing.Bitmap liste_de_controle1 {
             get {
                 object obj = ResourceManager.GetObject("liste-de-controle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap people_group_solid {
+            get {
+                object obj = ResourceManager.GetObject("people_group_solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap square_check_solid {
+            get {
+                object obj = ResourceManager.GetObject("square_check_solid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

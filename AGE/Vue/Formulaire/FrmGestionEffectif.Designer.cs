@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionEffectif));
+            System.Windows.Forms.Button ButtonGroupeOk;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionEffectif));
             this.ComboBoxGroupe = new System.Windows.Forms.ComboBox();
             this.ComboBoxBus = new System.Windows.Forms.ComboBox();
             this.ButtonExportGroupe = new System.Windows.Forms.Button();
-            this.ButtonGroupeOk = new System.Windows.Forms.Button();
             this.ButtonBusOk = new System.Windows.Forms.Button();
             this.LabelGroupeSelect = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.DateNaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NomBus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumGroupe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ButtonGroupeOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEnfant)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,35 +79,33 @@
             // 
             // ButtonExportGroupe
             // 
-            this.ButtonExportGroupe.Location = new System.Drawing.Point(827, 360);
+            this.ButtonExportGroupe.Image = global::AGE.Properties.Resources.exportUntitled;
+            this.ButtonExportGroupe.Location = new System.Drawing.Point(818, 352);
             this.ButtonExportGroupe.Name = "ButtonExportGroupe";
-            this.ButtonExportGroupe.Size = new System.Drawing.Size(133, 42);
+            this.ButtonExportGroupe.Size = new System.Drawing.Size(142, 50);
             this.ButtonExportGroupe.TabIndex = 3;
-            this.ButtonExportGroupe.Text = "Exporter la liste";
             this.ButtonExportGroupe.UseVisualStyleBackColor = true;
             this.ButtonExportGroupe.Click += new System.EventHandler(this.ButtonExport_Click);
             // 
             // ButtonGroupeOk
             // 
-            this.ButtonGroupeOk.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonGroupeOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ButtonGroupeOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.ButtonGroupeOk.Image = ((System.Drawing.Image)(resources.GetObject("ButtonGroupeOk.Image")));
-            this.ButtonGroupeOk.Location = new System.Drawing.Point(951, 139);
-            this.ButtonGroupeOk.Name = "ButtonGroupeOk";
-            this.ButtonGroupeOk.Size = new System.Drawing.Size(40, 30);
-            this.ButtonGroupeOk.TabIndex = 4;
-            this.ButtonGroupeOk.Text = "OK";
-            this.ButtonGroupeOk.UseVisualStyleBackColor = false;
-            this.ButtonGroupeOk.Click += new System.EventHandler(this.ButtonGroupeOk_Click);
+            ButtonGroupeOk.BackColor = System.Drawing.Color.Transparent;
+            ButtonGroupeOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            ButtonGroupeOk.Image = global::AGE.Properties.Resources.square_check_solid;
+            ButtonGroupeOk.Location = new System.Drawing.Point(951, 139);
+            ButtonGroupeOk.Name = "ButtonGroupeOk";
+            ButtonGroupeOk.Size = new System.Drawing.Size(40, 30);
+            ButtonGroupeOk.TabIndex = 4;
+            ButtonGroupeOk.UseVisualStyleBackColor = false;
+            ButtonGroupeOk.Click += new System.EventHandler(this.ButtonGroupeOk_Click);
             // 
             // ButtonBusOk
             // 
+            this.ButtonBusOk.Image = global::AGE.Properties.Resources.square_check_solid;
             this.ButtonBusOk.Location = new System.Drawing.Point(951, 272);
             this.ButtonBusOk.Name = "ButtonBusOk";
             this.ButtonBusOk.Size = new System.Drawing.Size(40, 30);
             this.ButtonBusOk.TabIndex = 5;
-            this.ButtonBusOk.Text = "OK";
             this.ButtonBusOk.UseVisualStyleBackColor = true;
             this.ButtonBusOk.Click += new System.EventHandler(this.ButtonBusOk_Click);
             // 
@@ -226,7 +225,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LabelGroupeSelect);
             this.Controls.Add(this.ButtonBusOk);
-            this.Controls.Add(this.ButtonGroupeOk);
+            this.Controls.Add(ButtonGroupeOk);
             this.Controls.Add(this.ButtonExportGroupe);
             this.Controls.Add(this.ComboBoxBus);
             this.Controls.Add(this.ComboBoxGroupe);
@@ -245,7 +244,6 @@
         private System.Windows.Forms.ComboBox ComboBoxGroupe;
         private System.Windows.Forms.ComboBox ComboBoxBus;
         private System.Windows.Forms.Button ButtonExportGroupe;
-        private System.Windows.Forms.Button ButtonGroupeOk;
         private System.Windows.Forms.Button ButtonBusOk;
         private System.Windows.Forms.Label LabelGroupeSelect;
         private System.Windows.Forms.Label label1;

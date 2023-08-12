@@ -139,4 +139,16 @@
   <data name="SquareCheckSolid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Vue\Image\square-check-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exportUntitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exportUntitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_excel_regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file-excel-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="people_group_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\people-group-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="square_check_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\square-check-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

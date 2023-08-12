@@ -121,6 +121,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Properties\liste-de-controle.png" />
+    <None Include="Resources\exportUntitled.png" />
     <None Include="Resources\file-excel-regular.png" />
     <None Include="Resources\people-group-solid.png" />
     <None Include="Resources\square-check-solid.png" />
