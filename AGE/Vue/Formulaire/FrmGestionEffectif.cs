@@ -48,7 +48,7 @@ namespace AGE.Vue.Formulaire
         private void ButtonBusOk_Click(object sender, EventArgs e)
         {
             BusEntity Bus= new BusEntity();
-            Bus.GetListEnfantBus(ComboBoxBus, DataGridViewEnfant);
+            Bus.GetListEnfantBus(ComboBoxBus, DataGridViewEnfant, ref ListEnfant);
 
         }
 

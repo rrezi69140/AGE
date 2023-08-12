@@ -68,7 +68,7 @@
             // 
             // ButtonExportGroupe
             // 
-            this.ButtonExportGroupe.Location = new System.Drawing.Point(938, 122);
+            this.ButtonExportGroupe.Location = new System.Drawing.Point(746, 291);
             this.ButtonExportGroupe.Name = "ButtonExportGroupe";
             this.ButtonExportGroupe.Size = new System.Drawing.Size(75, 23);
             this.ButtonExportGroupe.TabIndex = 3;
