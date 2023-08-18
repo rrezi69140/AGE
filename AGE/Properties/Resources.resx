@@ -151,4 +151,22 @@
   <data name="square_check_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\square-check-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AddPersonne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BTNEXPORT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeletPersonne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="modifyPerson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person_circle_plus_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person-circle-plus-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

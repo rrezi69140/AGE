@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesListesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionDesEffectifsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@
             // 
             this.gestionToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gestionToolStripMenuItem.BackgroundImage")));
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionDesListesToolStripMenuItem});
+            this.gestionDesListesToolStripMenuItem,
+            this.gestionDesEffectifsToolStripMenuItem});
             this.gestionToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gestionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
             this.gestionToolStripMenuItem.Image = global::AGE.Properties.Resources.users_solid_1__1_;
@@ -66,9 +68,17 @@
             this.gestionDesListesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
             this.gestionDesListesToolStripMenuItem.Image = global::AGE.Properties.Resources.liste_de_controle1;
             this.gestionDesListesToolStripMenuItem.Name = "gestionDesListesToolStripMenuItem";
-            this.gestionDesListesToolStripMenuItem.Size = new System.Drawing.Size(207, 28);
+            this.gestionDesListesToolStripMenuItem.Size = new System.Drawing.Size(221, 28);
             this.gestionDesListesToolStripMenuItem.Text = "Gestion Des listes";
             this.gestionDesListesToolStripMenuItem.Click += new System.EventHandler(this.gestionDesListesToolStripMenuItem_Click);
+            // 
+            // gestionDesEffectifsToolStripMenuItem
+            // 
+            this.gestionDesEffectifsToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gestionDesEffectifsToolStripMenuItem.Image = global::AGE.Properties.Resources.person_circle_plus_solid;
+            this.gestionDesEffectifsToolStripMenuItem.Name = "gestionDesEffectifsToolStripMenuItem";
+            this.gestionDesEffectifsToolStripMenuItem.Size = new System.Drawing.Size(221, 28);
+            this.gestionDesEffectifsToolStripMenuItem.Text = "Gestion des Effectifs";
             // 
             // FrmAceuilleLancementAplication
             // 
@@ -96,5 +106,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem gestionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDesListesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionDesEffectifsToolStripMenuItem;
     }
 }
