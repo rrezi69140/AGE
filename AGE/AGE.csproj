@@ -77,6 +77,24 @@
     <Compile Include="Vue\Formulaire\Aceuille\FrmAceuilleLancementAplication.Designer.cs">
       <DependentUpon>FrmAceuilleLancementAplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmAjouterEnfant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmAjouterEnfant.Designer.cs">
+      <DependentUpon>FrmAjouterEnfant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmModiferEnfant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmModiferEnfant.Designer.cs">
+      <DependentUpon>FrmModiferEnfant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmSupprimerEnfant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmSupprimerEnfant.Designer.cs">
+      <DependentUpon>FrmSupprimerEnfant.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vue\Formulaire\Liste\FrmAfficherListe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +138,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vue\Formulaire\Aceuille\FrmAceuilleLancementAplication.resx">
       <DependentUpon>FrmAceuilleLancementAplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Effectif\FrmAjouterEnfant.resx">
+      <DependentUpon>FrmAjouterEnfant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Effectif\FrmModiferEnfant.resx">
+      <DependentUpon>FrmModiferEnfant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Effectif\FrmSupprimerEnfant.resx">
+      <DependentUpon>FrmSupprimerEnfant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vue\Formulaire\Liste\FrmAfficherListe.resx">
       <DependentUpon>FrmAfficherListe.cs</DependentUpon>

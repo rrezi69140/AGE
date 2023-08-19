@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AGE.Vue.Formulaire.Effectif;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,23 @@ namespace AGE.Vue.Formulaire
         public FrmGestionEffectif()
         {
             InitializeComponent();
+        }
+        FrmAjouterEnfant FormulaireAjoutEnfant = new FrmAjouterEnfant();
+        FrmModiferEnfant FormulaireModifierEnfant = new FrmModiferEnfant();
+        FrmSupprimerEnfant FormulaireSupprimerEnfant = new FrmSupprimerEnfant();
+        private void ButtonAddEffectif_Click(object sender, EventArgs e)
+        {
+            FormulaireAjoutEnfant.Show();
+        }
+
+        private void ButtonDeletEffectif_Click(object sender, EventArgs e)
+        {
+            FormulaireSupprimerEnfant.Show();
+        }
+
+        private void ButtonModifyEffectif_Click(object sender, EventArgs e)
+        {
+            FormulaireModifierEnfant.Show();
         }
     }
 }

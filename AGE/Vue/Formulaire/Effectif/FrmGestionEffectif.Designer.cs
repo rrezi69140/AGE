@@ -48,26 +48,29 @@
             this.ButtonAddEffectif.Size = new System.Drawing.Size(55, 55);
             this.ButtonAddEffectif.TabIndex = 3;
             this.ButtonAddEffectif.UseVisualStyleBackColor = true;
+            this.ButtonAddEffectif.Click += new System.EventHandler(this.ButtonAddEffectif_Click);
             // 
             // ButtonDeletEffectif
             // 
             this.ButtonDeletEffectif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonDeletEffectif.Image = global::AGE.Properties.Resources.DeletPersonne;
-            this.ButtonDeletEffectif.Location = new System.Drawing.Point(232, 241);
+            this.ButtonDeletEffectif.Location = new System.Drawing.Point(232, 337);
             this.ButtonDeletEffectif.Name = "ButtonDeletEffectif";
             this.ButtonDeletEffectif.Size = new System.Drawing.Size(55, 55);
             this.ButtonDeletEffectif.TabIndex = 2;
             this.ButtonDeletEffectif.UseVisualStyleBackColor = true;
+            this.ButtonDeletEffectif.Click += new System.EventHandler(this.ButtonDeletEffectif_Click);
             // 
             // ButtonModifyEffectif
             // 
             this.ButtonModifyEffectif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonModifyEffectif.Image = global::AGE.Properties.Resources.modifyPerson;
-            this.ButtonModifyEffectif.Location = new System.Drawing.Point(232, 324);
+            this.ButtonModifyEffectif.Location = new System.Drawing.Point(232, 254);
             this.ButtonModifyEffectif.Name = "ButtonModifyEffectif";
             this.ButtonModifyEffectif.Size = new System.Drawing.Size(55, 55);
             this.ButtonModifyEffectif.TabIndex = 1;
             this.ButtonModifyEffectif.UseVisualStyleBackColor = true;
+            this.ButtonModifyEffectif.Click += new System.EventHandler(this.ButtonModifyEffectif_Click);
             // 
             // comboBox1
             // 
@@ -117,7 +120,7 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Liste Selectioné :";
             // 
-            // GestionEffectif
+            // FrmGestionEffectif
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +135,7 @@
             this.Controls.Add(this.ButtonDeletEffectif);
             this.Controls.Add(this.ButtonModifyEffectif);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "GestionEffectif";
+            this.Name = "FrmGestionEffectif";
             this.Text = "GestionEffectif";
             this.ResumeLayout(false);
             this.PerformLayout();
