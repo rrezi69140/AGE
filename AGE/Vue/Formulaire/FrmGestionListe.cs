@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AGE.Vue.Formulaire
 {
-    public partial class GestionEffectif : Form
+    public partial class FrmGestionListe : Form
     {
-        public GestionEffectif()
+        public FrmGestionListe()
         {
             InitializeComponent();
         }

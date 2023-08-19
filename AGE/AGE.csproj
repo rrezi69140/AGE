@@ -77,17 +77,23 @@
     <Compile Include="Vue\Formulaire\FrmAceuilleLancementAplication.Designer.cs">
       <DependentUpon>FrmAceuilleLancementAplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vue\Formulaire\FrmAfficherListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\FrmAfficherListe.Designer.cs">
+      <DependentUpon>FrmAfficherListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\FrmGestionListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\FrmGestionListe.Designer.cs">
+      <DependentUpon>FrmGestionListe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vue\Formulaire\FrmGestionEffectif.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vue\Formulaire\FrmGestionEffectif.Designer.cs">
       <DependentUpon>FrmGestionEffectif.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vue\Formulaire\GestionEffectif.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vue\Formulaire\GestionEffectif.Designer.cs">
-      <DependentUpon>GestionEffectif.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,11 +103,14 @@
     <EmbeddedResource Include="Vue\Formulaire\FrmAceuilleLancementAplication.resx">
       <DependentUpon>FrmAceuilleLancementAplication.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\FrmAfficherListe.resx">
+      <DependentUpon>FrmAfficherListe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vue\Formulaire\FrmGestionEffectif.resx">
       <DependentUpon>FrmGestionEffectif.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vue\Formulaire\GestionEffectif.resx">
-      <DependentUpon>GestionEffectif.cs</DependentUpon>
+    <EmbeddedResource Include="Vue\Formulaire\FrmGestionListe.resx">
+      <DependentUpon>FrmGestionListe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="GestioEnfantDataSet.xsc">
       <DependentUpon>GestioEnfantDataSet.xsd</DependentUpon>
@@ -143,6 +152,10 @@
     <None Include="Resources\Design sans titre%283%29.png" />
     <None Include="Resources\Design sans titre%284%29.png" />
     <None Include="Resources\Design sans titre%285%29.png" />
+    <None Include="Resources\Design sans titre%288%29.png" />
+    <None Include="Resources\Design sans titre%289%29.png" />
+    <None Include="Resources\Design sans titre%287%29.png" />
+    <None Include="Resources\Design sans titre%2810%29.png" />
     <Content Include="Vue\Image\AGE.png" />
     <Content Include="Vue\Image\Color1.png" />
     <Content Include="Vue\Image\Color2.png" />

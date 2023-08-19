@@ -16,7 +16,7 @@ namespace AGE.Vue.Formulaire
         {
             InitializeComponent();
         }
-        public FrmGestionEffectif FormulaireGestionListe = new FrmGestionEffectif();
+        public FrmAfficherListe FormulaireGestionListe = new FrmAfficherListe();
 
         private void gestionDesListesToolStripMenuItem_Click(object sender, EventArgs e)
         {
