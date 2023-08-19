@@ -56,7 +56,6 @@
             this.gestionDesEffectifsToolStripMenuItem});
             this.gestionToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gestionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.gestionToolStripMenuItem.Image = global::AGE.Properties.Resources.users_solid_1__1_;
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
             this.gestionToolStripMenuItem.Size = new System.Drawing.Size(117, 35);
             this.gestionToolStripMenuItem.Text = "Gestion";
@@ -66,7 +65,7 @@
             this.gestionDesListesToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gestionDesListesToolStripMenuItem.BackgroundImage")));
             this.gestionDesListesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gestionDesListesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.gestionDesListesToolStripMenuItem.Image = global::AGE.Properties.Resources.liste_de_controle1;
+            this.gestionDesListesToolStripMenuItem.Image = global::AGE.Properties.Resources.liste_de_controle;
             this.gestionDesListesToolStripMenuItem.Name = "gestionDesListesToolStripMenuItem";
             this.gestionDesListesToolStripMenuItem.Size = new System.Drawing.Size(221, 28);
             this.gestionDesListesToolStripMenuItem.Text = "Gestion Des listes";

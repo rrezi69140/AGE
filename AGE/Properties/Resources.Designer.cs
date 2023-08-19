@@ -93,6 +93,16 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Anuller {
+            get {
+                object obj = ResourceManager.GetObject("Anuller", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Color1 {
             get {
                 object obj = ResourceManager.GetObject("Color1", resourceCulture);
@@ -103,9 +113,39 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Color11 {
+        internal static System.Drawing.Bitmap Color2 {
             get {
-                object obj = ResourceManager.GetObject("Color11", resourceCulture);
+                object obj = ResourceManager.GetObject("Color2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Color3 {
+            get {
+                object obj = ResourceManager.GetObject("Color3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Copie_de_AGE {
+            get {
+                object obj = ResourceManager.GetObject("Copie_de_AGE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Copie_de_AGE_1_ {
+            get {
+                object obj = ResourceManager.GetObject("Copie_de_AGE_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,17 +205,7 @@ namespace AGE.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap liste_de_controle {
             get {
-                object obj = ResourceManager.GetObject("liste-de-controle", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap liste_de_controle1 {
-            get {
-                object obj = ResourceManager.GetObject("liste-de-controle1", resourceCulture);
+                object obj = ResourceManager.GetObject("liste_de_controle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,16 +263,6 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SquareCheckSolid {
-            get {
-                object obj = ResourceManager.GetObject("SquareCheckSolid", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap SuprimerListe {
             get {
                 object obj = ResourceManager.GetObject("SuprimerListe", resourceCulture);
@@ -251,11 +271,31 @@ namespace AGE.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+        /// </summary>
+        internal static System.Drawing.Icon users_solid_1_ {
+            get {
+                object obj = ResourceManager.GetObject("users_solid_1_", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+        /// </summary>
+        internal static System.Drawing.Icon users_solid_1__1_ {
+            get {
+                object obj = ResourceManager.GetObject("users_solid_1__1_", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap users_solid_1__1_ {
+        internal static System.Drawing.Bitmap Valider {
             get {
-                object obj = ResourceManager.GetObject("users-solid_1_(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("Valider", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
