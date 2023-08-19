@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 
 namespace AGE.Vue.Formulaire
@@ -19,6 +20,7 @@ namespace AGE.Vue.Formulaire
         public FrmAfficherListe FormulaireAfficherListe = new FrmAfficherListe();
         public FrmGestionListe FormulaireGestionListe = new FrmGestionListe();
         public FrmGestionEffectif FormulaireGestionEffectif = new FrmGestionEffectif();
+        
         private void AffichageDesListesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormulaireAfficherListe.Show();

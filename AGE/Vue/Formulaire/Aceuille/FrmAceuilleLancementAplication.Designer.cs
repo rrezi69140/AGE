@@ -34,7 +34,9 @@
             this.AffichageDesListesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesEffectifsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesListesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestioEnfantDataSet1 = new AGE.GestioEnfantDataSet();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gestioEnfantDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -90,6 +92,11 @@
             this.gestionDesListesToolStripMenuItem1.Text = "Gestion des Listes";
             this.gestionDesListesToolStripMenuItem1.Click += new System.EventHandler(this.gestionDesListesToolStripMenuItem1_Click);
             // 
+            // gestioEnfantDataSet1
+            // 
+            this.gestioEnfantDataSet1.DataSetName = "GestioEnfantDataSet";
+            this.gestioEnfantDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // FrmAceuilleLancementAplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,6 +113,7 @@
             this.Text = "FrmAceuilleLancementAplication";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gestioEnfantDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,5 +126,6 @@
         private System.Windows.Forms.ToolStripMenuItem AffichageDesListesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDesEffectifsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDesListesToolStripMenuItem1;
+        private GestioEnfantDataSet gestioEnfantDataSet1;
     }
 }

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows;
+using System.Resources;
 
 namespace AGE
 {
@@ -15,9 +17,13 @@ namespace AGE
         [STAThread]
         static void Main()
         {
+            
+           // SplashScreen splashScreen = new SplashScreen("AGE.bmp"); 
+            //splashScreen.Show(true);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmAceuilleLancementAplication());
+            
             
         }
     }

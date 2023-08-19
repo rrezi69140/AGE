@@ -54,6 +54,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\BusEntity.cs" />
@@ -132,7 +133,7 @@
       <DependentUpon>FrmModifierListe.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -213,7 +214,6 @@
     <None Include="Resources\Design sans titre%289%29.png" />
     <None Include="Resources\Design sans titre%287%29.png" />
     <None Include="Resources\Design sans titre%2810%29.png" />
-    <None Include="Resources\AGE.png" />
     <None Include="Resources\Color1.png" />
     <None Include="Resources\Color2.png" />
     <None Include="Resources\Color3.png" />
@@ -221,6 +221,8 @@
     <None Include="Resources\Copie de AGE.png" />
     <None Include="Resources\Design sans titre%2811%29.png" />
     <None Include="Resources\Anuller.png" />
+    <None Include="Resources\SplashAge.png" />
+    <None Include="Resources\AGE.bmp" />
     <Content Include="Resources\Image\AGE.png" />
     <Content Include="Resources\Image\Color1.png" />
     <Content Include="Resources\Image\Color2.png" />
