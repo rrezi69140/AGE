@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AGE.Vue.Formulaire.Liste
 {
-    public partial class ModifierListe : Form
+    public partial class FrmModifierListe : Form
     {
-        public ModifierListe()
+        public FrmModifierListe()
         {
             InitializeComponent();
         }

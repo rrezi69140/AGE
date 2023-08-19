@@ -151,6 +151,9 @@
   <data name="AjouterListe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Design sans titre(8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Anuller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anuller.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Color1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Color1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,5 +186,8 @@
   </data>
   <data name="users_solid_1__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users-solid_1_(1).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Valider" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(11).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

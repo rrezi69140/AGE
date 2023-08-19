@@ -16,12 +16,25 @@ namespace AGE.Vue.Formulaire
         {
             InitializeComponent();
         }
-        public FrmAfficherListe FormulaireGestionListe = new FrmAfficherListe();
+        public FrmAfficherListe FormulaireAfficherListe = new FrmAfficherListe();
+        public FrmGestionListe FormulaireGestionListe = new FrmGestionListe();
+        public FrmGestionEffectif FormulaireGestionEffectif = new FrmGestionEffectif();
+        private void AffichageDesListesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormulaireAfficherListe.Show();
+        
+        }
 
-        private void gestionDesListesToolStripMenuItem_Click(object sender, EventArgs e)
+      
+
+        private void gestionDesListesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FormulaireGestionListe.Show();
-        
+        }
+
+        private void gestionDesEffectifsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormulaireGestionEffectif.Show();
         }
     }
 }

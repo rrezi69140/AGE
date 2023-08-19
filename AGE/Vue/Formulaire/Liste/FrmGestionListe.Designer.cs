@@ -100,6 +100,7 @@
             this.ButtonModiferListe.Size = new System.Drawing.Size(55, 55);
             this.ButtonModiferListe.TabIndex = 5;
             this.ButtonModiferListe.UseVisualStyleBackColor = true;
+            this.ButtonModiferListe.Click += new System.EventHandler(this.ButtonModiferListe_Click);
             // 
             // ButtonSuprimmerListe
             // 
@@ -110,6 +111,7 @@
             this.ButtonSuprimmerListe.Size = new System.Drawing.Size(55, 55);
             this.ButtonSuprimmerListe.TabIndex = 4;
             this.ButtonSuprimmerListe.UseVisualStyleBackColor = true;
+            this.ButtonSuprimmerListe.Click += new System.EventHandler(this.ButtonSuprimmerListe_Click);
             // 
             // ButtonAjouterListe
             // 
@@ -120,6 +122,7 @@
             this.ButtonAjouterListe.Size = new System.Drawing.Size(55, 55);
             this.ButtonAjouterListe.TabIndex = 3;
             this.ButtonAjouterListe.UseVisualStyleBackColor = true;
+            this.ButtonAjouterListe.Click += new System.EventHandler(this.ButtonAjouterListe_Click);
             // 
             // dataGridView1
             // 

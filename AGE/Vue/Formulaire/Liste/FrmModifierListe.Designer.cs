@@ -1,6 +1,6 @@
 ﻿namespace AGE.Vue.Formulaire.Liste
 {
-    partial class ModifierListe
+    partial class FrmModifierListe
     {
         /// <summary>
         /// Required designer variable.
