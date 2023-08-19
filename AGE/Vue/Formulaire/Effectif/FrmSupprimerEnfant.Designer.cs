@@ -61,6 +61,7 @@
             this.ButtonAnuller.Size = new System.Drawing.Size(55, 55);
             this.ButtonAnuller.TabIndex = 5;
             this.ButtonAnuller.UseVisualStyleBackColor = true;
+            this.ButtonAnuller.Click += new System.EventHandler(this.ButtonAnuller_Click);
             // 
             // BouttonValider
             // 

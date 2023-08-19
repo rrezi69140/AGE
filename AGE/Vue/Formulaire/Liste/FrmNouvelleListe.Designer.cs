@@ -71,6 +71,7 @@
             this.ButtonAnnuler.Size = new System.Drawing.Size(55, 55);
             this.ButtonAnnuler.TabIndex = 3;
             this.ButtonAnnuler.UseVisualStyleBackColor = true;
+            this.ButtonAnnuler.Click += new System.EventHandler(this.ButtonAnnuler_Click);
             // 
             // FrmNouvelleListe
             // 

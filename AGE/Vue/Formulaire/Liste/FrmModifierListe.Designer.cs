@@ -48,12 +48,14 @@
             // 
             // ButtonAnuler
             // 
+            this.ButtonAnuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAnuler.Image = global::AGE.Properties.Resources.Anuller;
             this.ButtonAnuler.Location = new System.Drawing.Point(107, 178);
             this.ButtonAnuler.Name = "ButtonAnuler";
             this.ButtonAnuler.Size = new System.Drawing.Size(55, 55);
             this.ButtonAnuler.TabIndex = 1;
             this.ButtonAnuler.UseVisualStyleBackColor = true;
+            this.ButtonAnuler.Click += new System.EventHandler(this.ButtonAnuler_Click);
             // 
             // ComboLIsteAModifier
             // 
@@ -92,7 +94,7 @@
             this.textBox1.Size = new System.Drawing.Size(180, 22);
             this.textBox1.TabIndex = 5;
             // 
-            // ModifierListe
+            // FrmModifierListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,7 +106,7 @@
             this.Controls.Add(this.ButtonAnuler);
             this.Controls.Add(this.ButtonValider);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "ModifierListe";
+            this.Name = "FrmModifierListe";
             this.Text = "ModifierListe";
             this.ResumeLayout(false);
             this.PerformLayout();

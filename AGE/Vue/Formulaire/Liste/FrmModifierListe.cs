@@ -16,5 +16,10 @@ namespace AGE.Vue.Formulaire.Liste
         {
             InitializeComponent();
         }
+
+        private void ButtonAnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace AGE.Vue.Formulaire.Effectif
         {
             InitializeComponent();
         }
+
+        private void ButtonAnuller_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
