@@ -42,6 +42,10 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -202,7 +206,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="logopetititAge.ico" />
     <Content Include="Properties\liste-de-controle.png" />
+    <None Include="Resources\logopetititAge.ico" />
+    <None Include="Resources\logopetititAge.png" />
     <None Include="Resources\users-solid_1_%281%29.ico" />
     <None Include="Resources\users-solid_1_.ico" />
     <None Include="Resources\liste-de-controle.png" />
@@ -232,7 +239,12 @@
     <None Include="Resources\Anuller.png" />
     <None Include="Resources\SplashAge.png" />
     <None Include="Resources\AGE.bmp" />
+    <None Include="Resources\AfficherList.png" />
     <Content Include="Resources\AGE.png" />
+    <None Include="Resources\Design sans titre%2813%29.png" />
+    <None Include="Resources\Design sans titre%2814%29.png" />
+    <None Include="Resources\GestionListe.png" />
+    <None Include="Resources\Exploitation.png" />
     <Content Include="Resources\Image\AGE.bmp" />
     <Content Include="Resources\Image\AGE.png" />
     <Content Include="Resources\Image\Color1.png" />

@@ -38,5 +38,10 @@ namespace AGE.Vue.Formulaire
         {
             FormulaireGestionEffectif.Show();
         }
+
+        private void afficherListeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormulaireAfficherListe.Show();
+        }
     }
 }

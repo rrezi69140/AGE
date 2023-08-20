@@ -51,6 +51,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEnfant)).BeginInit();
             this.SuspendLayout();
             // 
+            // ButtonGroupeOk
+            // 
+            ButtonGroupeOk.BackColor = System.Drawing.Color.Transparent;
+            ButtonGroupeOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            ButtonGroupeOk.Image = global::AGE.Properties.Resources.square_check_solid;
+            ButtonGroupeOk.Location = new System.Drawing.Point(951, 139);
+            ButtonGroupeOk.Name = "ButtonGroupeOk";
+            ButtonGroupeOk.Size = new System.Drawing.Size(40, 30);
+            ButtonGroupeOk.TabIndex = 4;
+            ButtonGroupeOk.UseVisualStyleBackColor = false;
+            ButtonGroupeOk.Click += new System.EventHandler(this.ButtonGroupeOk_Click);
+            // 
             // ComboBoxGroupe
             // 
             this.ComboBoxGroupe.DropDownHeight = 150;
@@ -86,18 +98,6 @@
             this.ButtonExportGroupe.TabIndex = 3;
             this.ButtonExportGroupe.UseVisualStyleBackColor = true;
             this.ButtonExportGroupe.Click += new System.EventHandler(this.ButtonExport_Click);
-            // 
-            // ButtonGroupeOk
-            // 
-            ButtonGroupeOk.BackColor = System.Drawing.Color.Transparent;
-            ButtonGroupeOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            ButtonGroupeOk.Image = global::AGE.Properties.Resources.square_check_solid;
-            ButtonGroupeOk.Location = new System.Drawing.Point(951, 139);
-            ButtonGroupeOk.Name = "ButtonGroupeOk";
-            ButtonGroupeOk.Size = new System.Drawing.Size(40, 30);
-            ButtonGroupeOk.TabIndex = 4;
-            ButtonGroupeOk.UseVisualStyleBackColor = false;
-            ButtonGroupeOk.Click += new System.EventHandler(this.ButtonGroupeOk_Click);
             // 
             // ButtonBusOk
             // 
@@ -170,7 +170,7 @@
             this.DateNaissance,
             this.NomBus,
             this.NumGroupe});
-            this.DataGridViewEnfant.GridColor = System.Drawing.SystemColors.InactiveCaption;
+            this.DataGridViewEnfant.GridColor = System.Drawing.Color.White;
             this.DataGridViewEnfant.Location = new System.Drawing.Point(33, 73);
             this.DataGridViewEnfant.Name = "DataGridViewEnfant";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -214,7 +214,7 @@
             this.NumGroupe.HeaderText = "Nom du Groupe";
             this.NumGroupe.Name = "NumGroupe";
             // 
-            // FrmGestionEffectif
+            // FrmAfficherListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -231,7 +231,7 @@
             this.Controls.Add(this.ComboBoxGroupe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmGestionEffectif";
+            this.Name = "FrmAfficherListe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion des effectifs ";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEnfant)).EndInit();

@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAceuilleLancementAplication));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AffichageDesListesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesEffectifsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionDesListesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exploitationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.afficherListeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestioEnfantDataSet1 = new AGE.GestioEnfantDataSet();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gestioEnfantDataSet1)).BeginInit();
@@ -42,9 +42,9 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuStrip1.BackgroundImage")));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionToolStripMenuItem});
+            this.gestionToolStripMenuItem,
+            this.exploitationToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 39);
@@ -53,32 +53,21 @@
             // 
             // gestionToolStripMenuItem
             // 
-            this.gestionToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gestionToolStripMenuItem.BackgroundImage")));
+            this.gestionToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.AffichageDesListesToolStripMenuItem,
             this.gestionDesEffectifsToolStripMenuItem,
             this.gestionDesListesToolStripMenuItem1});
             this.gestionToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gestionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
+            this.gestionToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.gestionToolStripMenuItem.Image = global::AGE.Properties.Resources.Gestion;
             this.gestionToolStripMenuItem.Name = "gestionToolStripMenuItem";
-            this.gestionToolStripMenuItem.Size = new System.Drawing.Size(101, 35);
+            this.gestionToolStripMenuItem.Size = new System.Drawing.Size(117, 35);
             this.gestionToolStripMenuItem.Text = "Gestion";
-            // 
-            // AffichageDesListesToolStripMenuItem
-            // 
-            this.AffichageDesListesToolStripMenuItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AffichageDesListesToolStripMenuItem.BackgroundImage")));
-            this.AffichageDesListesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AffichageDesListesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.AffichageDesListesToolStripMenuItem.Image = global::AGE.Properties.Resources.liste_de_controle;
-            this.AffichageDesListesToolStripMenuItem.Name = "AffichageDesListesToolStripMenuItem";
-            this.AffichageDesListesToolStripMenuItem.Size = new System.Drawing.Size(221, 28);
-            this.AffichageDesListesToolStripMenuItem.Text = "Afficher les Liste";
-            this.AffichageDesListesToolStripMenuItem.Click += new System.EventHandler(this.AffichageDesListesToolStripMenuItem_Click);
             // 
             // gestionDesEffectifsToolStripMenuItem
             // 
             this.gestionDesEffectifsToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gestionDesEffectifsToolStripMenuItem.Image = global::AGE.Properties.Resources.person_circle_plus_solid;
+            this.gestionDesEffectifsToolStripMenuItem.Image = global::AGE.Properties.Resources.gestioneffectif;
             this.gestionDesEffectifsToolStripMenuItem.Name = "gestionDesEffectifsToolStripMenuItem";
             this.gestionDesEffectifsToolStripMenuItem.Size = new System.Drawing.Size(221, 28);
             this.gestionDesEffectifsToolStripMenuItem.Text = "Gestion des Effectifs";
@@ -87,10 +76,30 @@
             // gestionDesListesToolStripMenuItem1
             // 
             this.gestionDesListesToolStripMenuItem1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gestionDesListesToolStripMenuItem1.Image = global::AGE.Properties.Resources.GestionListe;
             this.gestionDesListesToolStripMenuItem1.Name = "gestionDesListesToolStripMenuItem1";
             this.gestionDesListesToolStripMenuItem1.Size = new System.Drawing.Size(221, 28);
             this.gestionDesListesToolStripMenuItem1.Text = "Gestion des Listes";
             this.gestionDesListesToolStripMenuItem1.Click += new System.EventHandler(this.gestionDesListesToolStripMenuItem1_Click);
+            // 
+            // exploitationToolStripMenuItem
+            // 
+            this.exploitationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.afficherListeToolStripMenuItem});
+            this.exploitationToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exploitationToolStripMenuItem.Image = global::AGE.Properties.Resources.Exploitation;
+            this.exploitationToolStripMenuItem.Name = "exploitationToolStripMenuItem";
+            this.exploitationToolStripMenuItem.Size = new System.Drawing.Size(155, 35);
+            this.exploitationToolStripMenuItem.Text = "Exploitation";
+            // 
+            // afficherListeToolStripMenuItem
+            // 
+            this.afficherListeToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.afficherListeToolStripMenuItem.Image = global::AGE.Properties.Resources.AfficherList;
+            this.afficherListeToolStripMenuItem.Name = "afficherListeToolStripMenuItem";
+            this.afficherListeToolStripMenuItem.Size = new System.Drawing.Size(180, 28);
+            this.afficherListeToolStripMenuItem.Text = "Afficher Liste";
+            this.afficherListeToolStripMenuItem.Click += new System.EventHandler(this.afficherListeToolStripMenuItem_Click);
             // 
             // gestioEnfantDataSet1
             // 
@@ -101,8 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Menu;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
@@ -124,9 +132,10 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem gestionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem AffichageDesListesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDesEffectifsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionDesListesToolStripMenuItem1;
         private GestioEnfantDataSet gestioEnfantDataSet1;
+        private System.Windows.Forms.ToolStripMenuItem exploitationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem afficherListeToolStripMenuItem;
     }
 }

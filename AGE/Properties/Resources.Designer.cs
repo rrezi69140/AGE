@@ -73,6 +73,16 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap AfficherList {
+            get {
+                object obj = ResourceManager.GetObject("AfficherList", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap AGE {
             get {
                 object obj = ResourceManager.GetObject("AGE", resourceCulture);
@@ -163,6 +173,16 @@ namespace AGE.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Exploitation {
+            get {
+                object obj = ResourceManager.GetObject("Exploitation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap exportUntitled {
             get {
                 object obj = ResourceManager.GetObject("exportUntitled", resourceCulture);
@@ -176,6 +196,36 @@ namespace AGE.Properties {
         public static System.Drawing.Bitmap file_excel_regular {
             get {
                 object obj = ResourceManager.GetObject("file_excel_regular", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Gestion {
+            get {
+                object obj = ResourceManager.GetObject("Gestion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap gestioneffectif {
+            get {
+                object obj = ResourceManager.GetObject("gestioneffectif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap GestionListe {
+            get {
+                object obj = ResourceManager.GetObject("GestionListe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -207,6 +257,26 @@ namespace AGE.Properties {
             get {
                 object obj = ResourceManager.GetObject("liste_de_controle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap logopetititAge {
+            get {
+                object obj = ResourceManager.GetObject("logopetititAge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+        /// </summary>
+        public static System.Drawing.Icon logopetititAge1 {
+            get {
+                object obj = ResourceManager.GetObject("logopetititAge1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

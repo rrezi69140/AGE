@@ -17,7 +17,7 @@ namespace AGE.Vue.Formulaire.Aceuille
         {
             InitializeComponent();
         }
-       private int timerLeft;
+       
        FrmAceuilleLancementAplication FormulaireAceuille = new FrmAceuilleLancementAplication();
 
 
