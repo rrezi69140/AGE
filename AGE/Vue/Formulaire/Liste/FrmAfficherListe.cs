@@ -17,14 +17,16 @@ using System.IO;
 
 namespace AGE.Vue.Formulaire
 {
-    public partial class FrmGestionEffectif : Form
+    public partial class FrmAfficherListe : Form
     {
-        public FrmGestionEffectif()
+        public FrmAfficherListe()
         {
             InitializeComponent();
             EnfantEntity Enfant = new EnfantEntity();
             BusEntity Bus = new BusEntity();
             GroupeEntity Groupe = new GroupeEntity();
+
+           
             
 
             Enfant.GetListEnfant(DataGridViewEnfant);

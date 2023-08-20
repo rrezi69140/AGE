@@ -118,22 +118,100 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="liste-de-controle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Vue\Image\liste-de-controle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exportUntitled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exportUntitled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="users-solid_1_(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Vue\Image\users-solid_1_(1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file_excel_regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file-excel-regular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Vue\Image\AGE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="people_group_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\people-group-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="square_check_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\square-check-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddPersonne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeletPersonne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="modifyPerson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person_circle_plus_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person-circle-plus-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SplashAge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AGE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AjouterListe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anuller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anuller.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Color1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Vue\Image\Color1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Color1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Color11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Vue\Image\Color1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Color2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Color2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="liste-de-controle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Vue\Image\liste-de-controle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Color3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Color3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copie_de_AGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copie de AGE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copie_de_AGE_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copie de AGE(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImporterList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="liste_de_controle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\liste-de-controle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModifierListe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(9).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SuprimerListe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users_solid_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users-solid_1_.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users_solid_1__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users-solid_1_(1).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Valider" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(11).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AGE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AGE.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AfficherList" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AfficherList.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exploitation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exploitation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gestion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(13).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gestioneffectif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Design sans titre(14).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GestionListe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GestionListe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logopetititAge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logopetititAge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logopetititAge1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logopetititAge.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

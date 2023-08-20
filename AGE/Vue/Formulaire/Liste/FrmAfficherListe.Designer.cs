@@ -1,6 +1,6 @@
 ﻿namespace AGE.Vue.Formulaire
 {
-    partial class FrmGestionEffectif
+    partial class FrmAfficherListe
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button ButtonGroupeOk;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionEffectif));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAfficherListe));
             this.ComboBoxGroupe = new System.Windows.Forms.ComboBox();
             this.ComboBoxBus = new System.Windows.Forms.ComboBox();
             this.ButtonExportGroupe = new System.Windows.Forms.Button();
-            this.ButtonGroupeOk = new System.Windows.Forms.Button();
             this.ButtonBusOk = new System.Windows.Forms.Button();
             this.LabelGroupeSelect = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,52 +47,65 @@
             this.DateNaissance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NomBus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumGroupe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ButtonGroupeOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEnfant)).BeginInit();
             this.SuspendLayout();
             // 
+            // ButtonGroupeOk
+            // 
+            ButtonGroupeOk.BackColor = System.Drawing.Color.Transparent;
+            ButtonGroupeOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            ButtonGroupeOk.Image = global::AGE.Properties.Resources.square_check_solid;
+            ButtonGroupeOk.Location = new System.Drawing.Point(951, 139);
+            ButtonGroupeOk.Name = "ButtonGroupeOk";
+            ButtonGroupeOk.Size = new System.Drawing.Size(40, 30);
+            ButtonGroupeOk.TabIndex = 4;
+            ButtonGroupeOk.UseVisualStyleBackColor = false;
+            ButtonGroupeOk.Click += new System.EventHandler(this.ButtonGroupeOk_Click);
+            // 
             // ComboBoxGroupe
             // 
+            this.ComboBoxGroupe.DropDownHeight = 150;
+            this.ComboBoxGroupe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxGroupe.DropDownWidth = 160;
+            this.ComboBoxGroupe.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBoxGroupe.FormattingEnabled = true;
-            this.ComboBoxGroupe.Location = new System.Drawing.Point(746, 122);
+            this.ComboBoxGroupe.IntegralHeight = false;
+            this.ComboBoxGroupe.Location = new System.Drawing.Point(762, 139);
             this.ComboBoxGroupe.Name = "ComboBoxGroupe";
-            this.ComboBoxGroupe.Size = new System.Drawing.Size(121, 21);
+            this.ComboBoxGroupe.Size = new System.Drawing.Size(160, 30);
             this.ComboBoxGroupe.TabIndex = 1;
             // 
             // ComboBoxBus
             // 
+            this.ComboBoxBus.DropDownHeight = 150;
+            this.ComboBoxBus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxBus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBoxBus.FormattingEnabled = true;
-            this.ComboBoxBus.Location = new System.Drawing.Point(746, 203);
+            this.ComboBoxBus.IntegralHeight = false;
+            this.ComboBoxBus.ItemHeight = 22;
+            this.ComboBoxBus.Location = new System.Drawing.Point(762, 272);
             this.ComboBoxBus.Name = "ComboBoxBus";
-            this.ComboBoxBus.Size = new System.Drawing.Size(121, 21);
+            this.ComboBoxBus.Size = new System.Drawing.Size(160, 30);
             this.ComboBoxBus.TabIndex = 2;
             // 
             // ButtonExportGroupe
             // 
-            this.ButtonExportGroupe.Location = new System.Drawing.Point(746, 291);
+            this.ButtonExportGroupe.Image = global::AGE.Properties.Resources.exportUntitled;
+            this.ButtonExportGroupe.Location = new System.Drawing.Point(818, 352);
             this.ButtonExportGroupe.Name = "ButtonExportGroupe";
-            this.ButtonExportGroupe.Size = new System.Drawing.Size(75, 23);
+            this.ButtonExportGroupe.Size = new System.Drawing.Size(142, 50);
             this.ButtonExportGroupe.TabIndex = 3;
-            this.ButtonExportGroupe.Text = "Exporter";
             this.ButtonExportGroupe.UseVisualStyleBackColor = true;
             this.ButtonExportGroupe.Click += new System.EventHandler(this.ButtonExport_Click);
             // 
-            // ButtonGroupeOk
-            // 
-            this.ButtonGroupeOk.Location = new System.Drawing.Point(889, 122);
-            this.ButtonGroupeOk.Name = "ButtonGroupeOk";
-            this.ButtonGroupeOk.Size = new System.Drawing.Size(34, 23);
-            this.ButtonGroupeOk.TabIndex = 4;
-            this.ButtonGroupeOk.Text = "OK";
-            this.ButtonGroupeOk.UseVisualStyleBackColor = true;
-            this.ButtonGroupeOk.Click += new System.EventHandler(this.ButtonGroupeOk_Click);
-            // 
             // ButtonBusOk
             // 
-            this.ButtonBusOk.Location = new System.Drawing.Point(889, 201);
+            this.ButtonBusOk.Image = global::AGE.Properties.Resources.square_check_solid;
+            this.ButtonBusOk.Location = new System.Drawing.Point(951, 272);
             this.ButtonBusOk.Name = "ButtonBusOk";
-            this.ButtonBusOk.Size = new System.Drawing.Size(34, 23);
+            this.ButtonBusOk.Size = new System.Drawing.Size(40, 30);
             this.ButtonBusOk.TabIndex = 5;
-            this.ButtonBusOk.Text = "OK";
             this.ButtonBusOk.UseVisualStyleBackColor = true;
             this.ButtonBusOk.Click += new System.EventHandler(this.ButtonBusOk_Click);
             // 
@@ -100,33 +113,35 @@
             // 
             this.LabelGroupeSelect.AutoSize = true;
             this.LabelGroupeSelect.BackColor = System.Drawing.Color.Transparent;
+            this.LabelGroupeSelect.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelGroupeSelect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.LabelGroupeSelect.Location = new System.Drawing.Point(743, 90);
+            this.LabelGroupeSelect.Location = new System.Drawing.Point(734, 87);
             this.LabelGroupeSelect.Name = "LabelGroupeSelect";
-            this.LabelGroupeSelect.Size = new System.Drawing.Size(156, 13);
+            this.LabelGroupeSelect.Size = new System.Drawing.Size(250, 29);
             this.LabelGroupeSelect.TabIndex = 6;
-            this.LabelGroupeSelect.Text = "Afficher le groupe selectionner :";
+            this.LabelGroupeSelect.Text = "Trier la liste par Groupe:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.label1.Location = new System.Drawing.Point(743, 174);
+            this.label1.Location = new System.Drawing.Point(734, 210);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 13);
+            this.label1.Size = new System.Drawing.Size(211, 29);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Afficher le Bus selectionner :";
+            this.label1.Text = "Trier la liste par Bus:";
             // 
             // LabelTitreFOrm
             // 
             this.LabelTitreFOrm.AutoSize = true;
             this.LabelTitreFOrm.BackColor = System.Drawing.Color.Transparent;
-            this.LabelTitreFOrm.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitreFOrm.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LabelTitreFOrm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.LabelTitreFOrm.Location = new System.Drawing.Point(318, 20);
+            this.LabelTitreFOrm.Location = new System.Drawing.Point(246, 9);
             this.LabelTitreFOrm.Name = "LabelTitreFOrm";
-            this.LabelTitreFOrm.Size = new System.Drawing.Size(467, 31);
+            this.LabelTitreFOrm.Size = new System.Drawing.Size(530, 33);
             this.LabelTitreFOrm.TabIndex = 8;
             this.LabelTitreFOrm.Text = "Affichage et exportation des differents Groupes";
             // 
@@ -137,7 +152,7 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             this.DataGridViewEnfant.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewEnfant.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+            this.DataGridViewEnfant.BackgroundColor = System.Drawing.Color.White;
             this.DataGridViewEnfant.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.Transparent;
@@ -155,7 +170,7 @@
             this.DateNaissance,
             this.NomBus,
             this.NumGroupe});
-            this.DataGridViewEnfant.GridColor = System.Drawing.SystemColors.InactiveCaption;
+            this.DataGridViewEnfant.GridColor = System.Drawing.Color.White;
             this.DataGridViewEnfant.Location = new System.Drawing.Point(33, 73);
             this.DataGridViewEnfant.Name = "DataGridViewEnfant";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -199,24 +214,24 @@
             this.NumGroupe.HeaderText = "Nom du Groupe";
             this.NumGroupe.Name = "NumGroupe";
             // 
-            // FrmGestionEffectif
+            // FrmAfficherListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AGE.Properties.Resources.Color1;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1064, 621);
             this.Controls.Add(this.DataGridViewEnfant);
             this.Controls.Add(this.LabelTitreFOrm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LabelGroupeSelect);
             this.Controls.Add(this.ButtonBusOk);
-            this.Controls.Add(this.ButtonGroupeOk);
+            this.Controls.Add(ButtonGroupeOk);
             this.Controls.Add(this.ButtonExportGroupe);
             this.Controls.Add(this.ComboBoxBus);
             this.Controls.Add(this.ComboBoxGroupe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FrmGestionEffectif";
+            this.Name = "FrmAfficherListe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion des effectifs ";
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEnfant)).EndInit();
@@ -229,7 +244,6 @@
         private System.Windows.Forms.ComboBox ComboBoxGroupe;
         private System.Windows.Forms.ComboBox ComboBoxBus;
         private System.Windows.Forms.Button ButtonExportGroupe;
-        private System.Windows.Forms.Button ButtonGroupeOk;
         private System.Windows.Forms.Button ButtonBusOk;
         private System.Windows.Forms.Label LabelGroupeSelect;
         private System.Windows.Forms.Label label1;

@@ -42,6 +42,10 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +58,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\BusEntity.cs" />
@@ -71,28 +76,109 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Vue\Formulaire\FrmAceuilleLancementAplication.cs">
+    <Compile Include="Vue\Formulaire\Aceuille\FrmAceuilleLancementAplication.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vue\Formulaire\FrmAceuilleLancementAplication.Designer.cs">
+    <Compile Include="Vue\Formulaire\Aceuille\FrmAceuilleLancementAplication.Designer.cs">
       <DependentUpon>FrmAceuilleLancementAplication.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vue\Formulaire\FrmGestionEffectif.cs">
+    <Compile Include="Vue\Formulaire\Aceuille\FrmSplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vue\Formulaire\FrmGestionEffectif.Designer.cs">
+    <Compile Include="Vue\Formulaire\Aceuille\FrmSplashScreen.Designer.cs">
+      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmAjouterEnfant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmAjouterEnfant.Designer.cs">
+      <DependentUpon>FrmAjouterEnfant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmModiferEnfant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmModiferEnfant.Designer.cs">
+      <DependentUpon>FrmModiferEnfant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmSupprimerEnfant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmSupprimerEnfant.Designer.cs">
+      <DependentUpon>FrmSupprimerEnfant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmAfficherListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmAfficherListe.Designer.cs">
+      <DependentUpon>FrmAfficherListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmGestionListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmGestionListe.Designer.cs">
+      <DependentUpon>FrmGestionListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmGestionEffectif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Effectif\FrmGestionEffectif.Designer.cs">
       <DependentUpon>FrmGestionEffectif.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmNouvelleListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmNouvelleListe.Designer.cs">
+      <DependentUpon>FrmNouvelleListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmSupprimerListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmSupprimerListe.Designer.cs">
+      <DependentUpon>FrmSupprimerListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmModifierListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vue\Formulaire\Liste\FrmModifierListe.Designer.cs">
+      <DependentUpon>FrmModifierListe.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vue\Formulaire\FrmAceuilleLancementAplication.resx">
+    <EmbeddedResource Include="Vue\Formulaire\Aceuille\FrmAceuilleLancementAplication.resx">
       <DependentUpon>FrmAceuilleLancementAplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vue\Formulaire\FrmGestionEffectif.resx">
+    <EmbeddedResource Include="Vue\Formulaire\Aceuille\FrmSplashScreen.resx">
+      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Effectif\FrmAjouterEnfant.resx">
+      <DependentUpon>FrmAjouterEnfant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Effectif\FrmModiferEnfant.resx">
+      <DependentUpon>FrmModiferEnfant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Effectif\FrmSupprimerEnfant.resx">
+      <DependentUpon>FrmSupprimerEnfant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Liste\FrmAfficherListe.resx">
+      <DependentUpon>FrmAfficherListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Effectif\FrmGestionEffectif.resx">
       <DependentUpon>FrmGestionEffectif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Liste\FrmGestionListe.resx">
+      <DependentUpon>FrmGestionListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Liste\FrmNouvelleListe.resx">
+      <DependentUpon>FrmNouvelleListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Liste\FrmSupprimerListe.resx">
+      <DependentUpon>FrmSupprimerListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vue\Formulaire\Liste\FrmModifierListe.resx">
+      <DependentUpon>FrmModifierListe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="GestioEnfantDataSet.xsc">
       <DependentUpon>GestioEnfantDataSet.xsd</DependentUpon>
@@ -120,13 +206,55 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="logopetititAge.ico" />
     <Content Include="Properties\liste-de-controle.png" />
-    <Content Include="Vue\Image\AGE.png" />
-    <Content Include="Vue\Image\Color1.png" />
-    <Content Include="Vue\Image\Color2.png" />
-    <Content Include="Vue\Image\Color3.png" />
-    <Content Include="Vue\Image\liste-de-controle.png" />
-    <Content Include="Vue\Image\users-solid_1_%281%29.ico" />
+    <None Include="Resources\logopetititAge.ico" />
+    <None Include="Resources\logopetititAge.png" />
+    <None Include="Resources\users-solid_1_%281%29.ico" />
+    <None Include="Resources\users-solid_1_.ico" />
+    <None Include="Resources\liste-de-controle.png" />
+    <None Include="Resources\exportUntitled.png" />
+    <None Include="Resources\file-excel-regular.png" />
+    <None Include="Resources\people-group-solid.png" />
+    <None Include="Resources\square-check-solid.png" />
+    <None Include="Resources\person-circle-plus-solid.svg" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\person-circle-plus-solid.png" />
+    <None Include="Resources\file-import-solid.png" />
+    <None Include="Resources\Design sans titre.png" />
+    <None Include="Resources\Design sans titre%281%29.png" />
+    <None Include="Resources\Design sans titre%283%29.png" />
+    <None Include="Resources\Design sans titre%284%29.png" />
+    <None Include="Resources\Design sans titre%285%29.png" />
+    <None Include="Resources\Design sans titre%288%29.png" />
+    <None Include="Resources\Design sans titre%289%29.png" />
+    <None Include="Resources\Design sans titre%287%29.png" />
+    <None Include="Resources\Design sans titre%2810%29.png" />
+    <None Include="Resources\Color1.png" />
+    <None Include="Resources\Color2.png" />
+    <None Include="Resources\Color3.png" />
+    <None Include="Resources\Copie de AGE%281%29.png" />
+    <None Include="Resources\Copie de AGE.png" />
+    <None Include="Resources\Design sans titre%2811%29.png" />
+    <None Include="Resources\Anuller.png" />
+    <None Include="Resources\SplashAge.png" />
+    <None Include="Resources\AGE.bmp" />
+    <None Include="Resources\AfficherList.png" />
+    <Content Include="Resources\AGE.png" />
+    <None Include="Resources\Design sans titre%2813%29.png" />
+    <None Include="Resources\Design sans titre%2814%29.png" />
+    <None Include="Resources\GestionListe.png" />
+    <None Include="Resources\Exploitation.png" />
+    <Content Include="Resources\Image\AGE.bmp" />
+    <Content Include="Resources\Image\AGE.png" />
+    <Content Include="Resources\Image\Color1.png" />
+    <Content Include="Resources\Image\Color2.png" />
+    <Content Include="Resources\Image\Color3.png" />
+    <Content Include="Resources\Image\file-excel-regular.png" />
+    <Content Include="Resources\Image\liste-de-controle.png" />
+    <Content Include="Resources\Image\people-group-solid.png" />
+    <Content Include="Resources\Image\square-check-solid.png" />
+    <Content Include="Resources\Image\users-solid_1_%281%29.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

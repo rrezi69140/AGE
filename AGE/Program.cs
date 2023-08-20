@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows;
+using System.Resources;
+using AGE.Vue.Formulaire.Aceuille;
 
 namespace AGE
 {
@@ -15,9 +18,12 @@ namespace AGE
         [STAThread]
         static void Main()
         {
+            
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmAceuilleLancementAplication());
+            Application.Run(new FrmSplashScreen());
+            
             
         }
     }
