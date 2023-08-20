@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows;
 using System.Resources;
+using AGE.Vue.Formulaire.Aceuille;
 
 namespace AGE
 {
@@ -18,11 +19,10 @@ namespace AGE
         static void Main()
         {
             
-           // SplashScreen splashScreen = new SplashScreen("AGE.bmp"); 
-            //splashScreen.Show(true);
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmAceuilleLancementAplication());
+            Application.Run(new FrmSplashScreen());
             
             
         }

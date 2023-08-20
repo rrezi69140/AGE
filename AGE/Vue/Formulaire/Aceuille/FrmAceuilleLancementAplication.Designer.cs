@@ -110,6 +110,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmAceuilleLancementAplication";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAceuilleLancementAplication";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
