@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AGE.Vue.Formulaire.Aceuille
 {
@@ -16,17 +17,29 @@ namespace AGE.Vue.Formulaire.Aceuille
         {
             InitializeComponent();
         }
-        private int timerLeft;
+       private int timerLeft;
        FrmAceuilleLancementAplication FormulaireAceuille = new FrmAceuilleLancementAplication();
 
 
+
+        private void SplashScreen_Load(object sender, EventArgs e)
+        {
+           
+            SplashTimer.Start();
+            ProgresseBare.Value = 0;
+            ProgresseBare.Maximum = 500;
+            ProgresseBare.ForeColor = Color.Blue;
+
+
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (timerLeft < 10)
-            {
-                timerLeft = timerLeft - 1;
-            }
-            else
+
+            ProgresseBare.Value += 100;
+           
+            
+            
+            if (ProgresseBare.Value > 499)
             {
                 SplashTimer.Stop();
                 FormulaireAceuille.Show();
@@ -35,11 +48,6 @@ namespace AGE.Vue.Formulaire.Aceuille
             
         }
 
-        private void SplashScreen_Load(object sender, EventArgs e)
-        {
-            timerLeft = 10;
-            SplashTimer.Start();
-
-        }
+      
     }
 }
