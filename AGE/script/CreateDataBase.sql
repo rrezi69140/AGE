@@ -1,0 +1,47 @@
+CREATE TABLE [Membre] (
+	NumDossier varchar(255) NOT NULL,
+	Nom varchar(255) NOT NULL,
+	Prenom varchar(255) NOT NULL,
+	DateNaissance date NOT NULL,
+	IGroupe integer NOT NULL,
+	IdBus integer NOT NULL,
+  CONSTRAINT [PK_MEMBRE] PRIMARY KEY CLUSTERED
+  (
+  [NumDossier] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Groupe] (
+	IdGroupe integer NOT NULL,
+	LibeleGroup varchar(255) NOT NULL,
+  CONSTRAINT [PK_GROUPE] PRIMARY KEY CLUSTERED
+  (
+  [IdGroupe] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Bus] (
+	IdBus integer NOT NULL,
+	LibeleBus varchar(255) NOT NULL,
+  CONSTRAINT [PK_BUS] PRIMARY KEY CLUSTERED
+  (
+  [IdBus] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+ALTER TABLE [Membre] WITH CHECK ADD CONSTRAINT [Membre_fk0] FOREIGN KEY ([IGroupe]) REFERENCES [Groupe]([IdGroupe])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Membre] CHECK CONSTRAINT [Membre_fk0]
+GO
+ALTER TABLE [Membre] WITH CHECK ADD CONSTRAINT [Membre_fk1] FOREIGN KEY ([IdBus]) REFERENCES [Bus]([IdBus])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Membre] CHECK CONSTRAINT [Membre_fk1]
+GO
+
+
+

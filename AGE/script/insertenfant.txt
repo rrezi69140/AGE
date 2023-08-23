@@ -1,0 +1,6 @@
+insert into dbo.Membre(NumDossier,Nom,Prenom,DateNaissance,IdBus,IGroupe) values (1,'rachid','Rezig','05-04-2004',1,3)
+insert into dbo.Membre(NumDossier,Nom,Prenom,DateNaissance,IdBus,IGroupe) values (2,'rachid','mounir','05-04-2004',1,2)
+insert into dbo.Membre(NumDossier,Nom,Prenom,DateNaissance,IdBus,IGroupe) values (3,'rachid','adel','05-04-2004',2,1)
+insert into dbo.Membre(NumDossier,Nom,Prenom,DateNaissance,IdBus,IGroupe) values (4,'rachid','karim','05-04-2004',2,3)
+insert into dbo.Membre(NumDossier,Nom,Prenom,DateNaissance,IdBus,IGroupe) values (5,'ben','rayene','05-04-2004',3,3)
+insert into dbo.Membre(NumDossier,Nom,Prenom,DateNaissance,IdBus,IGroupe) values (6,'ben','iliyes','05-04-2004',3,1)
