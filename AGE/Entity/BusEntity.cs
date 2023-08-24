@@ -12,7 +12,7 @@ namespace AGE.Entity
 {
     internal class BusEntity
     {
-        public SqlConnection MyConnecion = new SqlConnection("Data Source=PC-PORTABLE-RAC\\SQLEXPRESS;Initial Catalog=GestioEnfant;Integrated Security=True");
+        public SqlConnection MyConnecion = new SqlConnection("Data Source=DESKTOP-P2GM80O\\SQLEXPRESS01;Initial Catalog=GestioEnfant;Integrated Security=True");
         public string RequetteSQl;
 
         public void GetListBus(ComboBox ComboBoxBus)
