@@ -20,11 +20,12 @@ namespace AGE.Entity
         public void GetListEnfant(DataGridView DataGridBoxEnfant)
         {
             RequetteSQl = "Select NumDossier,Nom,Prenom,DateNaissance,G.LibeleGroup ,B.LibeleBus From Membre M join Groupe G ON M.IGroupe = G.IdGroupe join Bus B ON M.IGroupe = B.IdBus";
-            SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
+            
             
 
             try
             {
+                SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
                 MyConnecion.Open();
                 MyCommand.ExecuteNonQuery();
                 SqlDataReader MyDataReader = MyCommand.ExecuteReader();
@@ -35,7 +36,7 @@ namespace AGE.Entity
 
             }
             catch (Exception ex){
-                MessageBox.Show(ex.ToString(), "MyProgram", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(ex.ToString(), "MyProgram", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
@@ -43,6 +44,22 @@ namespace AGE.Entity
                 {
                     MyConnecion.Close();
                 }
+            }
+        }
+        public void AddEnfant(string NumDossier,string Nom,string Prenom,string DateNaissance, string IdGroupe , string IdBus)
+        {
+            RequetteSQl = $"INSERT INTO Membre(NumDossier, Nom, Prenom, DateNaissance, IdBus, IGroupe) values({NumDossier},{Nom},{Prenom},{DateNaissance},{IdGroupe},{IdBus});";
+         
+
+            try
+            {
+                SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
+                MyConnecion.Open();
+                MyCommand.ExecuteNonQuery();
+                SqlDataReader MyDataReader = MyCommand.ExecuteReader();
+            }
+            catch(Exception ex){
+                MessageBox.Show(ex.ToString(), "MyProgram", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

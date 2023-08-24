@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AGE.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace AGE.Vue.Formulaire.Effectif
 {
     public partial class FrmAjouterEnfant : Form
     {
+        EnfantEntity Enfant = new EnfantEntity();
         public FrmAjouterEnfant()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace AGE.Vue.Formulaire.Effectif
         private void ButtonAnuller_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ButtonValider_Click(object sender, EventArgs e)
+        {
+            Enfant.AddEnfant(TextBoxNumDossier.Text, TextBoxNom.Text, TextBoxPrenom.Text, TextBoxDateNaissance.Text, ComboBoxSelectionGroupe.Text, ComboBoxSelectionBus.Text);
         }
     }
 }

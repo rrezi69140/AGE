@@ -38,106 +38,165 @@
             this.TextBoxDateNaissance = new System.Windows.Forms.TextBox();
             this.ButtonValider = new System.Windows.Forms.Button();
             this.ButtonAnuller = new System.Windows.Forms.Button();
+            this.ComboBoxSelectionBus = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.ComboBoxSelectionGroupe = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 34);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 135);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 23);
+            this.label1.Size = new System.Drawing.Size(110, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Prenom :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(335, 79);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(20, 272);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 23);
+            this.label2.Size = new System.Drawing.Size(228, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Date de Naissance :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(335, 37);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(26, 69);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 23);
+            this.label3.Size = new System.Drawing.Size(244, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "Numeros de dossier :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 71);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(26, 198);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 23);
+            this.label4.Size = new System.Drawing.Size(77, 29);
             this.label4.TabIndex = 3;
             this.label4.Text = "Nom :";
             // 
             // TextBoxPrenom
             // 
-            this.TextBoxPrenom.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxPrenom.Location = new System.Drawing.Point(119, 37);
+            this.TextBoxPrenom.Font = new System.Drawing.Font("Arial", 13.8F);
+            this.TextBoxPrenom.Location = new System.Drawing.Point(277, 135);
+            this.TextBoxPrenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxPrenom.Name = "TextBoxPrenom";
-            this.TextBoxPrenom.Size = new System.Drawing.Size(174, 22);
+            this.TextBoxPrenom.Size = new System.Drawing.Size(231, 34);
             this.TextBoxPrenom.TabIndex = 4;
             // 
             // TextBoxNom
             // 
-            this.TextBoxNom.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxNom.Location = new System.Drawing.Point(119, 74);
+            this.TextBoxNom.Font = new System.Drawing.Font("Arial", 13.8F);
+            this.TextBoxNom.Location = new System.Drawing.Point(277, 200);
+            this.TextBoxNom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxNom.Name = "TextBoxNom";
-            this.TextBoxNom.Size = new System.Drawing.Size(174, 22);
+            this.TextBoxNom.Size = new System.Drawing.Size(231, 34);
             this.TextBoxNom.TabIndex = 5;
             // 
             // TextBoxNumDossier
             // 
-            this.TextBoxNumDossier.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxNumDossier.Location = new System.Drawing.Point(500, 40);
+            this.TextBoxNumDossier.Font = new System.Drawing.Font("Arial", 13.8F);
+            this.TextBoxNumDossier.Location = new System.Drawing.Point(277, 66);
+            this.TextBoxNumDossier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxNumDossier.Name = "TextBoxNumDossier";
-            this.TextBoxNumDossier.Size = new System.Drawing.Size(174, 22);
+            this.TextBoxNumDossier.Size = new System.Drawing.Size(231, 34);
             this.TextBoxNumDossier.TabIndex = 6;
             // 
             // TextBoxDateNaissance
             // 
-            this.TextBoxDateNaissance.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxDateNaissance.Location = new System.Drawing.Point(500, 82);
+            this.TextBoxDateNaissance.Font = new System.Drawing.Font("Arial", 13.8F);
+            this.TextBoxDateNaissance.Location = new System.Drawing.Point(277, 269);
+            this.TextBoxDateNaissance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxDateNaissance.Name = "TextBoxDateNaissance";
-            this.TextBoxDateNaissance.Size = new System.Drawing.Size(174, 22);
+            this.TextBoxDateNaissance.Size = new System.Drawing.Size(231, 34);
             this.TextBoxDateNaissance.TabIndex = 7;
             // 
             // ButtonValider
             // 
             this.ButtonValider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonValider.Image = global::AGE.Properties.Resources.Valider;
-            this.ButtonValider.Location = new System.Drawing.Point(517, 148);
+            this.ButtonValider.Location = new System.Drawing.Point(119, 451);
+            this.ButtonValider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonValider.Name = "ButtonValider";
-            this.ButtonValider.Size = new System.Drawing.Size(55, 55);
+            this.ButtonValider.Size = new System.Drawing.Size(73, 68);
             this.ButtonValider.TabIndex = 8;
             this.ButtonValider.UseVisualStyleBackColor = true;
+            this.ButtonValider.Click += new System.EventHandler(this.ButtonValider_Click);
             // 
             // ButtonAnuller
             // 
             this.ButtonAnuller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAnuller.Image = global::AGE.Properties.Resources.Anuller;
-            this.ButtonAnuller.Location = new System.Drawing.Point(619, 148);
+            this.ButtonAnuller.Location = new System.Drawing.Point(253, 451);
+            this.ButtonAnuller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ButtonAnuller.Name = "ButtonAnuller";
-            this.ButtonAnuller.Size = new System.Drawing.Size(55, 55);
+            this.ButtonAnuller.Size = new System.Drawing.Size(73, 68);
             this.ButtonAnuller.TabIndex = 9;
             this.ButtonAnuller.UseVisualStyleBackColor = true;
             this.ButtonAnuller.Click += new System.EventHandler(this.ButtonAnuller_Click);
             // 
+            // ComboBoxSelectionBus
+            // 
+            this.ComboBoxSelectionBus.Font = new System.Drawing.Font("Arial", 13.8F);
+            this.ComboBoxSelectionBus.FormattingEnabled = true;
+            this.ComboBoxSelectionBus.Location = new System.Drawing.Point(277, 334);
+            this.ComboBoxSelectionBus.Name = "ComboBoxSelectionBus";
+            this.ComboBoxSelectionBus.Size = new System.Drawing.Size(231, 34);
+            this.ComboBoxSelectionBus.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(26, 334);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 29);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Bus:";
+            // 
+            // ComboBoxSelectionGroupe
+            // 
+            this.ComboBoxSelectionGroupe.Font = new System.Drawing.Font("Arial", 13.8F);
+            this.ComboBoxSelectionGroupe.FormattingEnabled = true;
+            this.ComboBoxSelectionGroupe.Location = new System.Drawing.Point(277, 390);
+            this.ComboBoxSelectionGroupe.Name = "ComboBoxSelectionGroupe";
+            this.ComboBoxSelectionGroupe.Size = new System.Drawing.Size(231, 34);
+            this.ComboBoxSelectionGroupe.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(26, 390);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 29);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Groupe :";
+            // 
             // FrmAjouterEnfant
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 227);
+            this.ClientSize = new System.Drawing.Size(594, 615);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.ComboBoxSelectionGroupe);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ComboBoxSelectionBus);
             this.Controls.Add(this.ButtonAnuller);
             this.Controls.Add(this.ButtonValider);
             this.Controls.Add(this.TextBoxDateNaissance);
@@ -149,6 +208,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmAjouterEnfant";
             this.Text = "FrmAjouterEnfant";
             this.ResumeLayout(false);
@@ -168,5 +228,9 @@
         private System.Windows.Forms.TextBox TextBoxDateNaissance;
         private System.Windows.Forms.Button ButtonValider;
         private System.Windows.Forms.Button ButtonAnuller;
+        private System.Windows.Forms.ComboBox ComboBoxSelectionBus;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox ComboBoxSelectionGroupe;
+        private System.Windows.Forms.Label label6;
     }
 }
