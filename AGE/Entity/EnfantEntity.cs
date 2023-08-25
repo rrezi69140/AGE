@@ -48,7 +48,7 @@ namespace AGE.Entity
         }
         public void AddEnfant(string NumDossier,string Nom,string Prenom,string DateNaissance, string IdGroupe , string IdBus)
         {
-            RequetteSQl = $"INSERT INTO Membre(NumDossier, Nom, Prenom, DateNaissance, IdBus, IGroupe) values({NumDossier},{Nom},{Prenom},{DateNaissance},{IdGroupe},{IdBus});";
+            RequetteSQl = $"INSERT INTO Membre(NumDossier, Nom, Prenom, DateNaissance, IdBus, IGroupe) values({NumDossier},'{Nom}','{Prenom}','{DateNaissance}',{IdGroupe},{IdBus});";
          
 
             try

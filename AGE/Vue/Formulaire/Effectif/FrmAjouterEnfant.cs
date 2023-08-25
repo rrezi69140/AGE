@@ -14,9 +14,15 @@ namespace AGE.Vue.Formulaire.Effectif
     public partial class FrmAjouterEnfant : Form
     {
         EnfantEntity Enfant = new EnfantEntity();
+        BusEntity Bus = new BusEntity();
+        GroupeEntity Groupe = new GroupeEntity();
+        int BusSelectionner;
+        int GroupeSelectioner;
+        
         public FrmAjouterEnfant()
         {
             InitializeComponent();
+
         }
 
         private void ButtonAnuller_Click(object sender, EventArgs e)
@@ -26,7 +32,15 @@ namespace AGE.Vue.Formulaire.Effectif
 
         private void ButtonValider_Click(object sender, EventArgs e)
         {
-            Enfant.AddEnfant(TextBoxNumDossier.Text, TextBoxNom.Text, TextBoxPrenom.Text, TextBoxDateNaissance.Text, ComboBoxSelectionGroupe.Text, ComboBoxSelectionBus.Text);
+            GroupeSelectioner = (ComboBoxSelectionGroupe.SelectedIndex)+1;
+            BusSelectionner = (ComboBoxSelectionBus.SelectedIndex)+1;
+            Enfant.AddEnfant(TextBoxNumDossier.Text, TextBoxNom.Text, TextBoxPrenom.Text, TextBoxDateNaissance.Text, GroupeSelectioner.ToString(), BusSelectionner.ToString() );
+        }
+
+        private void FrmAjouterEnfant_Load(object sender, EventArgs e)
+        {
+            Bus.GetListBus(ComboBoxSelectionBus);
+            Groupe.GetListGroupe(ComboBoxSelectionGroupe);
         }
     }
 }

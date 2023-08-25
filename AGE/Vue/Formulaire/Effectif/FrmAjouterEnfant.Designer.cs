@@ -92,7 +92,7 @@
             // 
             this.TextBoxPrenom.Font = new System.Drawing.Font("Arial", 13.8F);
             this.TextBoxPrenom.Location = new System.Drawing.Point(277, 135);
-            this.TextBoxPrenom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBoxPrenom.Margin = new System.Windows.Forms.Padding(4);
             this.TextBoxPrenom.Name = "TextBoxPrenom";
             this.TextBoxPrenom.Size = new System.Drawing.Size(231, 34);
             this.TextBoxPrenom.TabIndex = 4;
@@ -101,7 +101,7 @@
             // 
             this.TextBoxNom.Font = new System.Drawing.Font("Arial", 13.8F);
             this.TextBoxNom.Location = new System.Drawing.Point(277, 200);
-            this.TextBoxNom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBoxNom.Margin = new System.Windows.Forms.Padding(4);
             this.TextBoxNom.Name = "TextBoxNom";
             this.TextBoxNom.Size = new System.Drawing.Size(231, 34);
             this.TextBoxNom.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             this.TextBoxNumDossier.Font = new System.Drawing.Font("Arial", 13.8F);
             this.TextBoxNumDossier.Location = new System.Drawing.Point(277, 66);
-            this.TextBoxNumDossier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBoxNumDossier.Margin = new System.Windows.Forms.Padding(4);
             this.TextBoxNumDossier.Name = "TextBoxNumDossier";
             this.TextBoxNumDossier.Size = new System.Drawing.Size(231, 34);
             this.TextBoxNumDossier.TabIndex = 6;
@@ -119,7 +119,7 @@
             // 
             this.TextBoxDateNaissance.Font = new System.Drawing.Font("Arial", 13.8F);
             this.TextBoxDateNaissance.Location = new System.Drawing.Point(277, 269);
-            this.TextBoxDateNaissance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBoxDateNaissance.Margin = new System.Windows.Forms.Padding(4);
             this.TextBoxDateNaissance.Name = "TextBoxDateNaissance";
             this.TextBoxDateNaissance.Size = new System.Drawing.Size(231, 34);
             this.TextBoxDateNaissance.TabIndex = 7;
@@ -129,7 +129,7 @@
             this.ButtonValider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonValider.Image = global::AGE.Properties.Resources.Valider;
             this.ButtonValider.Location = new System.Drawing.Point(119, 451);
-            this.ButtonValider.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonValider.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonValider.Name = "ButtonValider";
             this.ButtonValider.Size = new System.Drawing.Size(73, 68);
             this.ButtonValider.TabIndex = 8;
@@ -141,7 +141,7 @@
             this.ButtonAnuller.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonAnuller.Image = global::AGE.Properties.Resources.Anuller;
             this.ButtonAnuller.Location = new System.Drawing.Point(253, 451);
-            this.ButtonAnuller.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonAnuller.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonAnuller.Name = "ButtonAnuller";
             this.ButtonAnuller.Size = new System.Drawing.Size(73, 68);
             this.ButtonAnuller.TabIndex = 9;
@@ -208,9 +208,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAjouterEnfant";
             this.Text = "FrmAjouterEnfant";
+            this.Load += new System.EventHandler(this.FrmAjouterEnfant_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
