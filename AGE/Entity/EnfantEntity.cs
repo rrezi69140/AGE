@@ -64,7 +64,9 @@ namespace AGE.Entity
             {
                 if (MyConnecion.State == ConnectionState.Open)
                 {
+                    
                     MyConnecion.Close();
+                    MessageBox.Show("L'enfant a bien été ajouter ","Succes de l'ajout",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
             }
         }
