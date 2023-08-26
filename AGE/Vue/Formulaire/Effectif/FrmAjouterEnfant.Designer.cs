@@ -35,13 +35,13 @@
             this.TextBoxPrenom = new System.Windows.Forms.TextBox();
             this.TextBoxNom = new System.Windows.Forms.TextBox();
             this.TextBoxNumDossier = new System.Windows.Forms.TextBox();
-            this.TextBoxDateNaissance = new System.Windows.Forms.TextBox();
             this.ButtonValider = new System.Windows.Forms.Button();
             this.ButtonAnuller = new System.Windows.Forms.Button();
             this.ComboBoxSelectionBus = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.ComboBoxSelectionGroupe = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.DateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -115,15 +115,6 @@
             this.TextBoxNumDossier.Size = new System.Drawing.Size(231, 34);
             this.TextBoxNumDossier.TabIndex = 6;
             // 
-            // TextBoxDateNaissance
-            // 
-            this.TextBoxDateNaissance.Font = new System.Drawing.Font("Arial", 13.8F);
-            this.TextBoxDateNaissance.Location = new System.Drawing.Point(277, 269);
-            this.TextBoxDateNaissance.Margin = new System.Windows.Forms.Padding(4);
-            this.TextBoxDateNaissance.Name = "TextBoxDateNaissance";
-            this.TextBoxDateNaissance.Size = new System.Drawing.Size(231, 34);
-            this.TextBoxDateNaissance.TabIndex = 7;
-            // 
             // ButtonValider
             // 
             this.ButtonValider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -188,18 +179,27 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Groupe :";
             // 
+            // DateTimePicker
+            // 
+            this.DateTimePicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePicker.Location = new System.Drawing.Point(277, 272);
+            this.DateTimePicker.Name = "DateTimePicker";
+            this.DateTimePicker.Size = new System.Drawing.Size(305, 30);
+            this.DateTimePicker.TabIndex = 15;
+            // 
             // FrmAjouterEnfant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 615);
+            this.Controls.Add(this.DateTimePicker);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.ComboBoxSelectionGroupe);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.ComboBoxSelectionBus);
             this.Controls.Add(this.ButtonAnuller);
             this.Controls.Add(this.ButtonValider);
-            this.Controls.Add(this.TextBoxDateNaissance);
             this.Controls.Add(this.TextBoxNumDossier);
             this.Controls.Add(this.TextBoxNom);
             this.Controls.Add(this.TextBoxPrenom);
@@ -226,12 +226,12 @@
         private System.Windows.Forms.TextBox TextBoxPrenom;
         private System.Windows.Forms.TextBox TextBoxNom;
         private System.Windows.Forms.TextBox TextBoxNumDossier;
-        private System.Windows.Forms.TextBox TextBoxDateNaissance;
         private System.Windows.Forms.Button ButtonValider;
         private System.Windows.Forms.Button ButtonAnuller;
         private System.Windows.Forms.ComboBox ComboBoxSelectionBus;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox ComboBoxSelectionGroupe;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker DateTimePicker;
     }
 }

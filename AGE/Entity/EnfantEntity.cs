@@ -48,7 +48,7 @@ namespace AGE.Entity
         }
         public void AddEnfant(string NumDossier,string Nom,string Prenom,string DateNaissance, string IdGroupe , string IdBus)
         {
-            RequetteSQl = $"INSERT INTO Membre(NumDossier, Nom, Prenom, DateNaissance, IdBus, IGroupe) values({NumDossier},'{Nom}','{Prenom}','{DateNaissance}',{IdGroupe},{IdBus});";
+            RequetteSQl = $"INSERT INTO Membre(NumDossier, Nom, Prenom, DateNaissance, IdBus, IGroupe) values('{NumDossier}','{Nom}','{Prenom}','{DateNaissance}',{IdGroupe},{IdBus});";
          
 
             try
@@ -56,10 +56,16 @@ namespace AGE.Entity
                 SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
                 MyConnecion.Open();
                 MyCommand.ExecuteNonQuery();
-                SqlDataReader MyDataReader = MyCommand.ExecuteReader();
             }
             catch(Exception ex){
                 MessageBox.Show(ex.ToString(), "MyProgram", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (MyConnecion.State == ConnectionState.Open)
+                {
+                    MyConnecion.Close();
+                }
             }
         }
     }

@@ -34,7 +34,7 @@ namespace AGE.Vue.Formulaire.Effectif
         {
             GroupeSelectioner = (ComboBoxSelectionGroupe.SelectedIndex)+1;
             BusSelectionner = (ComboBoxSelectionBus.SelectedIndex)+1;
-            Enfant.AddEnfant(TextBoxNumDossier.Text, TextBoxNom.Text, TextBoxPrenom.Text, TextBoxDateNaissance.Text, GroupeSelectioner.ToString(), BusSelectionner.ToString() );
+            Enfant.AddEnfant(TextBoxNumDossier.Text, TextBoxNom.Text, TextBoxPrenom.Text, DateTimePicker.Value.ToString(), GroupeSelectioner.ToString(), BusSelectionner.ToString() );
         }
 
         private void FrmAjouterEnfant_Load(object sender, EventArgs e)
