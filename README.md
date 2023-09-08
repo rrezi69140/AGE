@@ -1,4 +1,4 @@
 Instalation:
-instaler un serveur windows serveur expresse et changer la string connection en fonction du serveur crée
+Installer un serveur Windows serveuse expresse et changer le string connexion en fonction du serveur qui a été créé
 
 # AGE
