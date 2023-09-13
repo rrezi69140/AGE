@@ -17,7 +17,7 @@ namespace AGE.Entity
 
         public void GetListBus(ComboBox ComboBoxBus)
         {
-            RequetteSQl = "Select LibeleBus  From Bus";
+            RequetteSQl = "Select Idbus,LibeleBus  From Bus";
             SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
             
 
@@ -28,7 +28,7 @@ namespace AGE.Entity
                 SqlDataReader MyDataReader = MyCommand.ExecuteReader();
                 while (MyDataReader.Read())
                 {
-                    ComboBoxBus.Items.Add(MyDataReader.GetString(0));
+                    ComboBoxBus.Items.Add(MyDataReader.GetString(1));
                 }
 
             }
