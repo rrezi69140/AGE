@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AGE.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +17,36 @@ namespace AGE.Vue.Formulaire.Effectif
         {
             InitializeComponent();
         }
+        BusEntity Bus = new BusEntity();
+        GroupeEntity Groupe = new GroupeEntity();
+        EnfantEntity Enfant = new EnfantEntity();
+        List<int> ListIndexSelectionner = new List<int>();
 
         private void ButtonAnuller_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmModiferEnfant_Load(object sender, EventArgs e)
+        {
+            Bus.GetListBus(ComboBoxBus);
+            Groupe.GetListGroupe(ComboBoxGroupe);
+            Enfant.GetListEnfantMod(ComboBoxEnfantAModifier,ref ListIndexSelectionner);
+        }
+
+        private void ComboBoxEnfantAModifier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = ComboBoxEnfantAModifier.SelectedIndex;
+            int membreSelectionner = ListIndexSelectionner[index];
+            Enfant.PreRemplissageComboBox(TextBoxNumDossier, TextBoxNom, TextBoxPrenom, DateTimePIckerDateNaissance, ComboBoxBus, ComboBoxGroupe, membreSelectionner );
+
+        }
+
+        private void ButtonValider_Click(object sender, EventArgs e)
+        {
+            int index = ComboBoxEnfantAModifier.SelectedIndex;
+            int membreSelectionner = ListIndexSelectionner[index];
+            Enfant.ModifyEnfant(membreSelectionner.ToString(),TextBoxNumDossier.Text, TextBoxNom.Text, TextBoxPrenom.Text, DateTimePIckerDateNaissance.Value.ToString(), ComboBoxGroupe.SelectedIndex.ToString(),ComboBoxBus.SelectedIndex.ToString() );
         }
     }
 }

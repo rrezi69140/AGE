@@ -42,6 +42,8 @@
             this.ComboBoxSelectionGroupe = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.DateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.gestioEnfantDataSet1 = new AGE.GestioEnfantDataSet();
+            ((System.ComponentModel.ISupportInitialize)(this.gestioEnfantDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -188,6 +190,11 @@
             this.DateTimePicker.Size = new System.Drawing.Size(305, 30);
             this.DateTimePicker.TabIndex = 15;
             // 
+            // gestioEnfantDataSet1
+            // 
+            this.gestioEnfantDataSet1.DataSetName = "GestioEnfantDataSet";
+            this.gestioEnfantDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // FrmAjouterEnfant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -212,6 +219,7 @@
             this.Name = "FrmAjouterEnfant";
             this.Text = "FrmAjouterEnfant";
             this.Load += new System.EventHandler(this.FrmAjouterEnfant_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gestioEnfantDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,5 +241,6 @@
         private System.Windows.Forms.ComboBox ComboBoxSelectionGroupe;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker DateTimePicker;
+        private GestioEnfantDataSet gestioEnfantDataSet1;
     }
 }
