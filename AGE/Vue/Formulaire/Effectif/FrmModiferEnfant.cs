@@ -41,5 +41,12 @@ namespace AGE.Vue.Formulaire.Effectif
             Enfant.PreRemplissageComboBox(TextBoxNumDossier, TextBoxNom, TextBoxPrenom, DateTimePIckerDateNaissance, ComboBoxBus, ComboBoxGroupe, membreSelectionner );
 
         }
+
+        private void ButtonValider_Click(object sender, EventArgs e)
+        {
+            int index = ComboBoxEnfantAModifier.SelectedIndex;
+            int membreSelectionner = ListIndexSelectionner[index];
+            Enfant.ModifyEnfant(membreSelectionner.ToString(),TextBoxNumDossier.Text, TextBoxNom.Text, TextBoxPrenom.Text, DateTimePIckerDateNaissance.Value.ToString(), ComboBoxGroupe.SelectedIndex.ToString(),ComboBoxBus.SelectedIndex.ToString() );
+        }
     }
 }

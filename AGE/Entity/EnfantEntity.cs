@@ -169,7 +169,7 @@ namespace AGE.Entity
 
         public void ModifyEnfant(string ID, string NumDossier, string Nom, string Prenom, string DateNaissance, string IdGroupe, string IdBus)
         {
-            RequetteSQl = $"update dbo.Membre set NumDossier = {NumDossier}, Nom = {Nom}, Prenom = {Prenom}, DateNaissance = {DateNaissance}, IdBus = {IdBus}, IGroupe = {IdGroupe} WHERE  Id =  {ID} ";
+            RequetteSQl = $"update Membre set NumDossier = {NumDossier}, Nom = '{Nom}', Prenom = '{Prenom}', DateNaissance = '{DateNaissance}', IdBus = {IdBus + 1 }, IGroupe = {IdGroupe + 1} WHERE  Id =  {ID} ";
 
 
             try

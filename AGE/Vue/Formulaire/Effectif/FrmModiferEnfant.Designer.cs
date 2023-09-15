@@ -68,6 +68,7 @@
             this.ButtonValider.Size = new System.Drawing.Size(73, 68);
             this.ButtonValider.TabIndex = 18;
             this.ButtonValider.UseVisualStyleBackColor = true;
+            this.ButtonValider.Click += new System.EventHandler(this.ButtonValider_Click);
             // 
             // TextBoxNumDossier
             // 
