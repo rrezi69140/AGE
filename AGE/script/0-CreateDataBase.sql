@@ -1,4 +1,4 @@
-USE [GestionEnfant]
+USE [GestioEnfant]
 GO
 
 -- Création de la table Groupe
