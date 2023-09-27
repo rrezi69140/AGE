@@ -16,7 +16,7 @@ CREATE TABLE [dbo].[Groupe](
         ALLOW_PAGE_LOCKS = ON, 
         OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
     ) ON [PRIMARY]
-) ON [PRIMARY]
+)
 GO
 
 -- Création de la table Bus
@@ -34,7 +34,7 @@ CREATE TABLE [dbo].[Bus](
         ALLOW_PAGE_LOCKS = ON, 
         OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
     ) ON [PRIMARY]
-) ON [PRIMARY]
+)
 GO
 
 -- Création de la table Membre
@@ -49,6 +49,43 @@ CREATE TABLE [dbo].[Membre](
     CONSTRAINT [PK_MEMBRE] PRIMARY KEY CLUSTERED 
     (
         [Id] ASC
+    )WITH (
+        PAD_INDEX = OFF, 
+        STATISTICS_NORECOMPUTE = OFF, 
+        IGNORE_DUP_KEY = OFF, 
+        ALLOW_ROW_LOCKS = ON, 
+        ALLOW_PAGE_LOCKS = ON, 
+        OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
+    ) ON [PRIMARY]
+)
+GO
+
+-- Création de la table Liste
+CREATE TABLE [dbo].[Liste](
+    [IdListe] [int] IDENTITY(1,1) NOT NULL,
+    [NomListe] [varchar](255) NOT NULL,
+    CONSTRAINT [PK_LISTE] PRIMARY KEY CLUSTERED 
+    (
+        [IdListe] ASC
+    )WITH (
+        PAD_INDEX = OFF, 
+        STATISTICS_NORECOMPUTE = OFF, 
+        IGNORE_DUP_KEY = OFF, 
+        ALLOW_ROW_LOCKS = ON, 
+        ALLOW_PAGE_LOCKS = ON, 
+        OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
+    ) ON [PRIMARY]
+)
+GO
+
+-- Création de la table de liaison ListeMembre
+CREATE TABLE [dbo].[ListeMembre](
+    [IdListe] [int] NOT NULL,
+    [IdMembre] [int] NOT NULL,
+    CONSTRAINT [PK_LISTEMEMBRE] PRIMARY KEY CLUSTERED 
+    (
+        [IdListe] ASC,
+        [IdMembre] ASC
     )WITH (
         PAD_INDEX = OFF, 
         STATISTICS_NORECOMPUTE = OFF, 
@@ -75,4 +112,15 @@ ON UPDATE CASCADE
 GO
 
 ALTER TABLE [dbo].[Membre] CHECK CONSTRAINT [Membre_fk1]
+GO
+
+-- Définition des contraintes de clé étrangère pour ListeMembre
+ALTER TABLE [dbo].[ListeMembre] WITH CHECK ADD CONSTRAINT [ListeMembre_fk0] FOREIGN KEY([IdListe])
+REFERENCES [dbo].[Liste] ([IdListe])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE [dbo].[ListeMembre] WITH CHECK ADD CONSTRAINT [ListeMembre_fk1] FOREIGN KEY([IdMembre])
+REFERENCES [dbo].[Membre] ([Id])
+ON DELETE CASCADE
 GO
