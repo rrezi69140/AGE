@@ -25,6 +25,7 @@ namespace AGE.Vue.Formulaire
             EnfantEntity Enfant = new EnfantEntity();
             BusEntity Bus = new BusEntity();
             GroupeEntity Groupe = new GroupeEntity();
+            ListeEntity Liste = new ListeEntity();
 
            
             
@@ -32,6 +33,7 @@ namespace AGE.Vue.Formulaire
             Enfant.GetListEnfant(DataGridViewEnfant);
             Bus.GetListBus(ComboBoxBus);
             Groupe.GetListGroupe(ComboBoxGroupe);
+            Liste.GetListListe(ComboBoxListerListe);
         }
 
         List<string> ListEnfant = new List<string>();
@@ -85,6 +87,12 @@ namespace AGE.Vue.Formulaire
                 MessageBox.Show($"Le fichier na pas pu être exporter cause : {ex.Message} ps:Veuller contacter rachid ");
             }
             
+        }
+
+        private void ButtonOKListerList_Click(object sender, EventArgs e)
+        {
+            EnfantEntity Enfant = new EnfantEntity();
+            Enfant.GetListEnfantByListe(DataGridViewEnfant,ComboBoxListerListe, ref ListEnfant);
         }
     }
     

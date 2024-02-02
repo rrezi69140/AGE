@@ -1,13 +1,17 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace AGE.Entity
 {
@@ -25,6 +29,8 @@ namespace AGE.Entity
 
             try
             {
+                Debug.WriteLine("Tentative de recuperation de la liste des effectifs ");
+             
                 SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
                 MyConnecion.Open();
                 MyCommand.ExecuteNonQuery();
@@ -36,6 +42,46 @@ namespace AGE.Entity
 
             }
             catch (Exception ex){
+                MessageBox.Show(ex.ToString(), "MyProgram", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                if (MyConnecion.State == ConnectionState.Open)
+                {
+                    MyConnecion.Close();
+                }
+            }
+        }
+
+        public void GetListEnfantByListe(DataGridView DataGridBoxEnfant,ComboBox ComboBoxList, ref List<string> RefListEnfant)
+        {
+
+            string ListeSelectionner;
+            ListeSelectionner = ComboBoxList.SelectedItem.ToString();
+            RefListEnfant.Clear();
+            DataGridBoxEnfant.Rows.Clear();
+            Debug.WriteLine("Tentative de recuperation de la liste des effectifs ");
+
+            RequetteSQl = $"select * from V_ENfantListe where NomListe ='{ListeSelectionner}' ";
+
+
+
+            try
+            {
+                    
+
+                SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
+                MyConnecion.Open();
+                MyCommand.ExecuteNonQuery();
+                SqlDataReader MyDataReader = MyCommand.ExecuteReader();
+                while (MyDataReader.Read())
+                {
+                    DataGridBoxEnfant.Rows.Add(MyDataReader.GetValue(0).ToString(), MyDataReader.GetValue(1).ToString(), MyDataReader.GetValue(2).ToString(), MyDataReader.GetValue(3).ToString(), MyDataReader.GetValue(4).ToString(), MyDataReader.GetValue(5).ToString(), MyDataReader.GetValue(6).ToString());
+                }
+
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.ToString(), "MyProgram", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
@@ -126,6 +172,7 @@ namespace AGE.Entity
                 SqlCommand MyCommand = new SqlCommand(RequetteSQl, MyConnecion);
                 MyConnecion.Open();
                 MyCommand.ExecuteNonQuery();
+                
             }
             catch(Exception ex){
                 MessageBox.Show(ex.ToString(), "MyProgram", MessageBoxButtons.OK, MessageBoxIcon.Error);

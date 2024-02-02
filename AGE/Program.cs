@@ -7,6 +7,10 @@ using System.Windows.Forms;
 using System.Windows;
 using System.Resources;
 using AGE.Vue.Formulaire.Aceuille;
+using System.Data.SqlClient;
+using Microsoft.Extensions.Logging;
+
+
 
 namespace AGE
 {
@@ -18,12 +22,14 @@ namespace AGE
         [STAThread]
         static void Main()
         {
-            
-           
+
+         
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmSplashScreen());
-            
+            SqlClientLogger Logger = new SqlClientLogger();
             
         }
     }
