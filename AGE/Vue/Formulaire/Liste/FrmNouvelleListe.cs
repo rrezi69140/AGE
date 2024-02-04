@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AGE.Entity;
+using System;
 using System.Windows.Forms;
 
 namespace AGE.Vue.Formulaire.Liste
@@ -20,6 +14,12 @@ namespace AGE.Vue.Formulaire.Liste
         private void ButtonAnnuler_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BouttonValider_Click(object sender, EventArgs e)
+        {
+            ListeEntity listeEntity = new ListeEntity();
+            listeEntity.AddListe(TextBoxAjouterListe.Text.ToString());
         }
     }
 }

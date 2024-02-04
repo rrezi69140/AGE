@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AGE.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,26 @@ namespace AGE.Vue.Formulaire.Liste
         public FrmSupprimerListe()
         {
             InitializeComponent();
+        
         }
+        int ListeSelectionner;
+        ListeEntity Liste = new ListeEntity();
 
         private void ButtonAnuller_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BouttonValider_Click(object sender, EventArgs e)
+        {
+            
+            ListeSelectionner = (ComboBoxListeASuprimmer.SelectedIndex + 1);
+            Liste.DeletListe(ListeSelectionner.ToString());
+        }
+
+        private void FrmSupprimerListe_Load(object sender, EventArgs e)
+        {
+            Liste.GetListListe(ComboBoxListeASuprimmer);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using AGE.Vue.Formulaire.Liste;
+﻿using AGE.Entity;
+using AGE.Vue.Formulaire.Liste;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,11 +17,13 @@ namespace AGE.Vue.Formulaire
         public FrmGestionListe()
         {
             InitializeComponent();
+           
+
         }
-         public FrmNouvelleListe FormulaireCreationListe = new FrmNouvelleListe();
+        public FrmNouvelleListe FormulaireCreationListe = new FrmNouvelleListe();
         public FrmModifierListe FormulaireModifierListe = new FrmModifierListe();
         public FrmSupprimerListe FrmSupprimerListe = new FrmSupprimerListe();
-
+        
         
 
         private void ButtonAjouterListe_Click(object sender, EventArgs e)
@@ -36,6 +39,20 @@ namespace AGE.Vue.Formulaire
         private void ButtonSuprimmerListe_Click(object sender, EventArgs e)
         {
             FrmSupprimerListe.Show();
+        }
+
+        private void FrmGestionListe_Load(object sender, EventArgs e)
+        {
+            ListeEntity Liste = new ListeEntity();
+            Liste.GetListListe(dateGridViewListe);
+        }
+
+        private void BtnActualiser_Click(object sender, EventArgs e)
+
+        {
+            
+             ListeEntity Liste = new ListeEntity();
+            Liste.GetListListe(dateGridViewListe);
         }
     }
 }

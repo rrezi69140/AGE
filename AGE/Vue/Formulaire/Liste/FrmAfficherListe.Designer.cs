@@ -41,9 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.LabelTitreFOrm = new System.Windows.Forms.Label();
             this.DataGridViewEnfant = new System.Windows.Forms.DataGridView();
-            this.ComboBoxListerListe = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ButtonOKListerList = new System.Windows.Forms.Button();
             this.NumDossier = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +48,9 @@
             this.NomBus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumGroupe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NomListe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ComboBoxListerListe = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ButtonOKListerList = new System.Windows.Forms.Button();
             ButtonGroupeOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEnfant)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +61,7 @@
             ButtonGroupeOk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             ButtonGroupeOk.Image = global::AGE.Properties.Resources.square_check_solid;
             ButtonGroupeOk.Location = new System.Drawing.Point(1268, 171);
-            ButtonGroupeOk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            ButtonGroupeOk.Margin = new System.Windows.Forms.Padding(4);
             ButtonGroupeOk.Name = "ButtonGroupeOk";
             ButtonGroupeOk.Size = new System.Drawing.Size(53, 37);
             ButtonGroupeOk.TabIndex = 4;
@@ -77,7 +77,7 @@
             this.ComboBoxGroupe.FormattingEnabled = true;
             this.ComboBoxGroupe.IntegralHeight = false;
             this.ComboBoxGroupe.Location = new System.Drawing.Point(1016, 171);
-            this.ComboBoxGroupe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ComboBoxGroupe.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBoxGroupe.Name = "ComboBoxGroupe";
             this.ComboBoxGroupe.Size = new System.Drawing.Size(212, 37);
             this.ComboBoxGroupe.TabIndex = 1;
@@ -91,7 +91,7 @@
             this.ComboBoxBus.IntegralHeight = false;
             this.ComboBoxBus.ItemHeight = 29;
             this.ComboBoxBus.Location = new System.Drawing.Point(1016, 312);
-            this.ComboBoxBus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ComboBoxBus.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBoxBus.Name = "ComboBoxBus";
             this.ComboBoxBus.Size = new System.Drawing.Size(212, 37);
             this.ComboBoxBus.TabIndex = 2;
@@ -100,7 +100,7 @@
             // 
             this.ButtonExportGroupe.Image = global::AGE.Properties.Resources.exportUntitled;
             this.ButtonExportGroupe.Location = new System.Drawing.Point(1027, 535);
-            this.ButtonExportGroupe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonExportGroupe.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonExportGroupe.Name = "ButtonExportGroupe";
             this.ButtonExportGroupe.Size = new System.Drawing.Size(189, 62);
             this.ButtonExportGroupe.TabIndex = 3;
@@ -111,7 +111,7 @@
             // 
             this.ButtonBusOk.Image = global::AGE.Properties.Resources.square_check_solid;
             this.ButtonBusOk.Location = new System.Drawing.Point(1268, 312);
-            this.ButtonBusOk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonBusOk.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonBusOk.Name = "ButtonBusOk";
             this.ButtonBusOk.Size = new System.Drawing.Size(53, 37);
             this.ButtonBusOk.TabIndex = 5;
@@ -185,7 +185,7 @@
             this.NomListe});
             this.DataGridViewEnfant.GridColor = System.Drawing.Color.White;
             this.DataGridViewEnfant.Location = new System.Drawing.Point(44, 90);
-            this.DataGridViewEnfant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DataGridViewEnfant.Margin = new System.Windows.Forms.Padding(4);
             this.DataGridViewEnfant.Name = "DataGridViewEnfant";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Transparent;
@@ -198,44 +198,6 @@
             this.DataGridViewEnfant.RowHeadersWidth = 51;
             this.DataGridViewEnfant.Size = new System.Drawing.Size(875, 649);
             this.DataGridViewEnfant.TabIndex = 9;
-            // 
-            // ComboBoxListerListe
-            // 
-            this.ComboBoxListerListe.DropDownHeight = 150;
-            this.ComboBoxListerListe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxListerListe.DropDownWidth = 160;
-            this.ComboBoxListerListe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxListerListe.FormattingEnabled = true;
-            this.ComboBoxListerListe.IntegralHeight = false;
-            this.ComboBoxListerListe.Location = new System.Drawing.Point(1016, 474);
-            this.ComboBoxListerListe.Margin = new System.Windows.Forms.Padding(4);
-            this.ComboBoxListerListe.Name = "ComboBoxListerListe";
-            this.ComboBoxListerListe.Size = new System.Drawing.Size(212, 37);
-            this.ComboBoxListerListe.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
-            this.label2.Location = new System.Drawing.Point(950, 390);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(263, 37);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Trier la liste par liste";
-            // 
-            // ButtonOKListerList
-            // 
-            this.ButtonOKListerList.Image = global::AGE.Properties.Resources.square_check_solid;
-            this.ButtonOKListerList.Location = new System.Drawing.Point(1268, 477);
-            this.ButtonOKListerList.Margin = new System.Windows.Forms.Padding(4);
-            this.ButtonOKListerList.Name = "ButtonOKListerList";
-            this.ButtonOKListerList.Size = new System.Drawing.Size(53, 37);
-            this.ButtonOKListerList.TabIndex = 12;
-            this.ButtonOKListerList.UseVisualStyleBackColor = true;
-            this.ButtonOKListerList.Click += new System.EventHandler(this.ButtonOKListerList_Click);
             // 
             // NumDossier
             // 
@@ -286,6 +248,44 @@
             this.NomListe.Name = "NomListe";
             this.NomListe.Width = 125;
             // 
+            // ComboBoxListerListe
+            // 
+            this.ComboBoxListerListe.DropDownHeight = 150;
+            this.ComboBoxListerListe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxListerListe.DropDownWidth = 160;
+            this.ComboBoxListerListe.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxListerListe.FormattingEnabled = true;
+            this.ComboBoxListerListe.IntegralHeight = false;
+            this.ComboBoxListerListe.Location = new System.Drawing.Point(1016, 474);
+            this.ComboBoxListerListe.Margin = new System.Windows.Forms.Padding(4);
+            this.ComboBoxListerListe.Name = "ComboBoxListerListe";
+            this.ComboBoxListerListe.Size = new System.Drawing.Size(212, 37);
+            this.ComboBoxListerListe.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(76)))), ((int)(((byte)(87)))));
+            this.label2.Location = new System.Drawing.Point(950, 390);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(263, 37);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Trier la liste par liste";
+            // 
+            // ButtonOKListerList
+            // 
+            this.ButtonOKListerList.Image = global::AGE.Properties.Resources.square_check_solid;
+            this.ButtonOKListerList.Location = new System.Drawing.Point(1268, 477);
+            this.ButtonOKListerList.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonOKListerList.Name = "ButtonOKListerList";
+            this.ButtonOKListerList.Size = new System.Drawing.Size(53, 37);
+            this.ButtonOKListerList.TabIndex = 12;
+            this.ButtonOKListerList.UseVisualStyleBackColor = true;
+            this.ButtonOKListerList.Click += new System.EventHandler(this.ButtonOKListerList_Click);
+            // 
             // FrmAfficherListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -306,7 +306,7 @@
             this.Controls.Add(this.ComboBoxGroupe);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAfficherListe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion des effectifs ";
